@@ -1,0 +1,470 @@
+{
+	id: "41DDE820BE913888"
+	group: ""
+	order_index: 7
+	filename: "tier_5_endgaem"
+	title: "第 5 階：遊戲終章"
+	icon: "projectexpansion:final_star"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "kubejs:cube4"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "終於，我全都有了"
+			description: ["現在我明白了一切。我生於這宇宙中，這些水晶背後的意義。它們引導著我，慢慢地教導我如何製作更強大，更有力的催化劑，就是為了達到最終的目標。最終之星正等著我..."]
+			dependencies: ["157D4C0E9C7A0928"]
+			id: "07980075BFE4C586"
+			tasks: [{
+				id: "120AF98B995C2B33"
+				type: "checkmark"
+				title: "經歷這麼多年..."
+			}]
+			rewards: [{
+				id: "6EF6444338A6F5F8"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 64
+			}]
+		}
+		{
+			icon: "kubejs:black_essence"
+			x: 1.5d
+			y: -1.0d
+			description: ["有人說，太空中看起來什麼都沒有的區域都充滿了它。"]
+			dependencies: ["07980075BFE4C586"]
+			id: "059DCF9720BF62A2"
+			tasks: [{
+				id: "1E04BCFD21FF51AD"
+				type: "checkmark"
+				title: "黑暗精華"
+			}]
+			rewards: [{
+				id: "355174964BFE7C2E"
+				type: "item"
+				item: "kubejs:black_essence"
+				count: 4
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: ["將物品灌注黑暗精華不怎麼有效率，若先將它富集後能產生* 20 倍*的黑暗精華。"]
+			dependencies: ["059DCF9720BF62A2"]
+			id: "2A54B4D2619C6CD8"
+			tasks: [{
+				id: "78EDF4223CDC7F5B"
+				type: "item"
+				item: "kubejs:enriched_black_essence"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["一種獨特的超級合金，幾乎 100 %免疫各種的輻射。"]
+			dependencies: ["059DCF9720BF62A2"]
+			id: "133E1F837FA4A41B"
+			tasks: [{
+				id: "09B189D88272BD7C"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+			}]
+			rewards: [{
+				id: "16C9D04597D15877"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			description: ["用這種超級合金塗上 HDPE 板片上，也許我能實驗釙或反物質的製程。"]
+			dependencies: ["133E1F837FA4A41B"]
+			id: "53F4A40B4EAECB3E"
+			tasks: [{
+				id: "6A85AA47BC93CE53"
+				type: "item"
+				item: "kubejs:black_hdpe_sheet"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			description: ["當在太陽能直射到的地方時，太陽中子活化器能將核分裂反應爐中的核廢料轉換成釙。"]
+			dependencies: ["53F4A40B4EAECB3E"]
+			id: "41E380D0E0E5E75A"
+			tasks: [{
+				id: "0D8DCA89FD12C7E3"
+				type: "item"
+				item: "mekanism:solar_neutron_activator"
+			}]
+		}
+		{
+			title: "召喚凋零王"
+			x: -1.5d
+			y: -1.0d
+			description: ["我能用一些骨頭和體力寶石，注入黑暗精華製作凋零骷髏頭，用來召喚凋零王。"]
+			dependencies: ["07980075BFE4C586"]
+			id: "72B98B8FDAC0BC45"
+			tasks: [
+				{
+					id: "27F4994572067C96"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 3L
+				}
+				{
+					id: "3122F67E65383D36"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "51319CE00B5C2E91"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 3
+				}
+				{
+					id: "458F9B32CB5FE339"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			description: ["雖然本身就是一個強大的星，但也是最終之星的材料之一。"]
+			dependencies: ["72B98B8FDAC0BC45"]
+			id: "384BB4E82F5D69C6"
+			tasks: [{
+				id: "35F207A74B6EAA09"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+			rewards: [{
+				id: "2C30B178D34BDF57"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "凋零王自動化"
+			x: -2.5d
+			y: 0.0d
+			shape: "diamond"
+			description: ["有各種方法可以自動召喚凋零王，但當中最簡單的方法是使用凋零怪生成器。只要給它所需物品就能自動幫我召喚，然後用生物屠殺裝置來自動取得地獄之星。"]
+			dependencies: ["72B98B8FDAC0BC45"]
+			optional: true
+			id: "2D4CFBD09E6AFA85"
+			tasks: [
+				{
+					id: "00A26E4F9FAA8300"
+					type: "item"
+					item: "industrialforegoing:wither_builder"
+				}
+				{
+					id: "31C401704351B201"
+					type: "item"
+					item: "industrialforegoing:mob_crusher"
+				}
+			]
+			rewards: [{
+				id: "550D8B6CF244D38D"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+		{
+			title: "超臨界移相器"
+			x: 4.0d
+			y: -3.0d
+			dependencies: ["41E380D0E0E5E75A"]
+			id: "41D9B7AC1089FA83"
+			tasks: [
+				{
+					id: "5914B4A680D30F75"
+					type: "item"
+					item: "mekanism:sps_casing"
+					count: 60L
+				}
+				{
+					id: "4A62CCF59257CE86"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 123L
+				}
+				{
+					id: "08A3E2771E114453"
+					type: "item"
+					item: "mekanism:sps_port"
+					count: 3L
+				}
+				{
+					id: "05B673DAC24FBB1E"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -4.0d
+			description: ["雖然取得又慢又貴，這個反物質肯定會幫助我創造出物理上不可能實現的東西。"]
+			dependencies: ["41D9B7AC1089FA83"]
+			id: "6A313C7F7A10ABE7"
+			tasks: [{
+				id: "2241E41C58273405"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+			rewards: [{
+				id: "1D0807CDA07757A1"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+				count: 2
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			dependencies: ["07980075BFE4C586"]
+			id: "4DA3EFBDC9FE2FDF"
+			tasks: [{
+				id: "543077701DABA7CD"
+				type: "item"
+				item: "powah:crystal_nitro"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["07980075BFE4C586"]
+			id: "21736DEF38D368D1"
+			tasks: [{
+				id: "308E6FF10841A021"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			dependencies: [
+				"384BB4E82F5D69C6"
+				"4DA3EFBDC9FE2FDF"
+				"21736DEF38D368D1"
+			]
+			id: "2BA7E55C7B7EB3C3"
+			tasks: [{
+				id: "0694DCFB36A75BB7"
+				type: "item"
+				item: "projectexpansion:final_star_shard"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.5d
+			shape: "octagon"
+			description: ["就是它了。前所未有見的最強大的星。靠著它給我的 EMC，往後我將衣食無虞。然而，我能有更好的運用方式。"]
+			dependencies: [
+				"2BA7E55C7B7EB3C3"
+				"6A313C7F7A10ABE7"
+				"1449829DCB1B39C4"
+			]
+			id: "53B7C4EFD1B28F70"
+			tasks: [{
+				id: "440C55230602ECF4"
+				type: "item"
+				item: "projectexpansion:final_star"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			description: ["將各種金屬和寶石注入 1,000 個後，我就能製作終極奇點，這含有製作最終之星製程中的所有必要元素。"]
+			dependencies: ["07980075BFE4C586"]
+			id: "1449829DCB1B39C4"
+			tasks: [{
+				id: "0E9D814D30592F58"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -10.5d
+			shape: "pentagon"
+			description: ["最終之星的真正潛能。有了這個，EMC 和原礦材料我將永遠不用再擔心了。"]
+			dependencies: [
+				"53B7C4EFD1B28F70"
+				"0F08BE53368BBA0E"
+				"4912D9951F6B69A9"
+				"001789AD77BFECCF"
+				"643082630E0B6CFD"
+				"72B973D152D0D797"
+			]
+			id: "1D6666CFC0B349E1"
+			tasks: [{
+				id: "6E754D97D3E78A68"
+				type: "item"
+				item: "projectexpansion:final_power_flower"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -12.0d
+			shape: "gear"
+			description: ["從最終之星的無盡深淵中心儲存和取出物品。若你做出這個，恭喜，你從這個模組包中畢業了。"]
+			dependencies: ["1D6666CFC0B349E1"]
+			id: "79B1FCD79D650A18"
+			tasks: [{
+				id: "3F1FE18A9C21E03D"
+				type: "item"
+				item: "storagedrawers:creative_vending_upgrade"
+			}]
+			rewards: [{
+				id: "7A303AA3ED13A4E6"
+				type: "item"
+				item: "minecraft:cod"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			description: ["無限的動力源。"]
+			dependencies: ["53B7C4EFD1B28F70"]
+			id: "0F08BE53368BBA0E"
+			tasks: [{
+				id: "7C236303EF71DB29"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.5d
+			subtitle: "請閱讀任務敘述了解如何製作"
+			description: ["無限的電力。注意：\"請勿\"將終極能量立方放置出來充電，用無線充電或是用物品的方式放入任何能充電的機器中，因為把它放出來後會讓你變成擁有者，這會讓合成時無法識別。"]
+			dependencies: ["53B7C4EFD1B28F70"]
+			id: "643082630E0B6CFD"
+			tasks: [{
+				id: "6B6B22A465884FF5"
+				type: "item"
+				item: {
+					id: "mekanism:creative_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.5d
+			description: ["無限的流體儲存與取出。"]
+			dependencies: ["53B7C4EFD1B28F70"]
+			id: "4912D9951F6B69A9"
+			tasks: [{
+				id: "500E0937561BCE1C"
+				type: "item"
+				item: "mekanism:creative_fluid_tank"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.5d
+			shape: "hexagon"
+			description: ["無限制的 EMC 與物品轉換的輸入輸出端。"]
+			dependencies: ["6D84D702189A9505"]
+			optional: true
+			id: "448F9E6FE3FC4F04"
+			tasks: [{
+				id: "4BE9E7FC0757F556"
+				type: "item"
+				item: "projectexpansion:final_emc_link"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -9.0d
+			description: ["無限量的精緻儲存空間。"]
+			dependencies: ["53B7C4EFD1B28F70"]
+			id: "001789AD77BFECCF"
+			tasks: [{
+				id: "4F9815D48862D2A4"
+				type: "item"
+				item: "refinedstorage:creative_storage_disk"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.5d
+			subtitle: "在終界之星前推薦先製作"
+			description: ["無限的氣體和化學品的儲存和提取。強烈推薦在最終之星前先做出這個，因為它可以提供無限的反物質。"]
+			dependencies: [
+				"2BA7E55C7B7EB3C3"
+				"6A313C7F7A10ABE7"
+			]
+			id: "72B973D152D0D797"
+			tasks: [{
+				id: "7CC64EE6B88CD556"
+				type: "item"
+				item: "mekanism:creative_chemical_tank"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			description: ["不是全部的創造物品都是創造模式取出升級的必需品，有些只是可選擇的，就看你是否想要。"]
+			dependencies: ["2BA7E55C7B7EB3C3"]
+			optional: true
+			id: "6D84D702189A9505"
+			tasks: [{
+				id: "04885001577E80D6"
+				type: "checkmark"
+				title: "可選擇的創造物品"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			shape: "hexagon"
+			description: ["可永久設定烈焰使者動力爐的加熱等級，且不用消耗。"]
+			dependencies: ["6D84D702189A9505"]
+			optional: true
+			id: "5414E6D079200533"
+			tasks: [{
+				id: "20511334736BEEF1"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			shape: "hexagon"
+			description: ["不消耗 RF ，超快的處理速度"]
+			dependencies: ["6D84D702189A9505"]
+			optional: true
+			id: "7CE54486D31A47BA"
+			tasks: [{
+				id: "52A22B4A47C791B2"
+				type: "item"
+				item: "thermal:machine_efficiency_creative_augment"
+			}]
+		}
+	]
+}

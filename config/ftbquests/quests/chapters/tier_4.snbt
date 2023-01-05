@@ -1,0 +1,643 @@
+{
+	id: "38378A6F4FF9F098"
+	group: ""
+	order_index: 6
+	filename: "tier_4"
+	title: "第 4 階：進階通用機械"
+	icon: "kubejs:cube4"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "kubejs:cube3"
+			x: 0.0d
+			y: 0.0d
+			description: ["新的階層，新的材料；你懂得。"]
+			dependencies: ["1A67C9B9ABB4E969"]
+			id: "4E81E76086558A19"
+			tasks: [{
+				id: "6DC696B8987D5178"
+				type: "checkmark"
+				title: "第 4 階的材料"
+			}]
+		}
+		{
+			icon: "mekanism:ingot_uranium"
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["4E81E76086558A19"]
+			id: "15AFC0BA95FC8B41"
+			tasks: [{
+				id: "1782ECBC146EE156"
+				type: "checkmark"
+				title: "鈾"
+			}]
+			rewards: [{
+				id: "653B7682B1D7AA45"
+				type: "item"
+				item: "mekanism:raw_uranium"
+			}]
+		}
+		{
+			icon: "mekanism:fluorite_gem"
+			x: 1.0d
+			y: -1.5d
+			dependencies: ["4E81E76086558A19"]
+			id: "67A2B456E7E5CFF6"
+			tasks: [{
+				id: "760694F06091D57D"
+				type: "checkmark"
+				title: "螢石"
+			}]
+			rewards: [{
+				id: "1AE0F0065287BD62"
+				type: "item"
+				item: "mekanism:fluorite_ore"
+			}]
+		}
+		{
+			icon: "kubejs:oil_clump"
+			x: -1.0d
+			y: 0.0d
+			description: ["在合成配方時可取代史萊姆球，且在熔岩爐中能轉換成石油。"]
+			dependencies: ["4E81E76086558A19"]
+			id: "17DAE811CFBA10B9"
+			tasks: [{
+				id: "5704CDE574DD30D8"
+				type: "checkmark"
+				title: "石油球"
+			}]
+			rewards: [{
+				id: "479DEC2CE37B4174"
+				type: "item"
+				item: "kubejs:oil_clump"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["流體精煉機能將石油處理成有用的產物，輕油與重油。"]
+			dependencies: ["17DAE811CFBA10B9"]
+			id: "6201AC6B5614B2EA"
+			tasks: [{
+				id: "29A1C4C987D9ACC0"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+			rewards: [
+				{
+					id: "18A3AD161F07ED8F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "42B50B4BC6DE9380"
+					type: "item"
+					item: "thermal:crude_oil_bucket"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			shape: "diamond"
+			description: ["壓縮能源爐能燃燒流體如精煉油產生大量的 RF。"]
+			dependencies: ["7943076114A42DFC"]
+			optional: true
+			id: "2E769FE13EC39E0D"
+			tasks: [{
+				id: "7BF588900AFA9032"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+			rewards: [{
+				id: "6F611A64AAAEBA76"
+				type: "item"
+				item: "thermal:refined_fuel_bucket"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			description: ["獲取精煉油的精煉過程中也會有瀝青，硫磺，焦油等副產物，使其特別有用。"]
+			dependencies: ["6201AC6B5614B2EA"]
+			id: "7943076114A42DFC"
+			tasks: [{
+				id: "2D2A9DE21E8A4EB6"
+				type: "item"
+				item: "thermal:refined_fuel_bucket"
+			}]
+			rewards: [{
+				id: "5A90134AE0BB17CA"
+				type: "item"
+				item: "thermal:refined_fuel_bucket"
+			}]
+		}
+		{
+			title: "易裂變燃料產線"
+			icon: "mekanism:radioactive_waste_barrel"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			description: ["易裂變燃料產線只靠查詢 JEI 是相當難以理解的，但這個任務告訴你整個產線需要的所有機器，只需要四種原料：鈾、硫磺、螢石和水。祝你好運！"]
+			dependencies: [
+				"67A2B456E7E5CFF6"
+				"15AFC0BA95FC8B41"
+			]
+			id: "3E8F024835BB58F7"
+			tasks: [
+				{
+					id: "3C52E0B443C0D654"
+					type: "item"
+					item: "mekanism:isotopic_centrifuge"
+				}
+				{
+					id: "759EAF578A1E1A21"
+					type: "item"
+					item: "mekanism:chemical_oxidizer"
+					count: 2L
+				}
+				{
+					id: "3B9ED8F416DDDC77"
+					type: "item"
+					item: "mekanism:chemical_infuser"
+					count: 3L
+				}
+				{
+					id: "2E5991C74AB20581"
+					type: "item"
+					item: "mekanism:chemical_dissolution_chamber"
+				}
+				{
+					id: "374A668C81C85286"
+					type: "item"
+					item: "mekanism:enrichment_chamber"
+				}
+				{
+					id: "75BA3A1BB3DA4403"
+					type: "item"
+					item: "mekanism:rotary_condensentrator"
+				}
+				{
+					id: "38947FCE079E8D2C"
+					type: "item"
+					item: "mekanism:electrolytic_separator"
+				}
+			]
+			rewards: [
+				{
+					id: "68F44F9925BE925D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "3D1DD6ABE4262F65"
+					type: "item"
+					item: "kubejs:cube2_packaged"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			description: ["你能在淨化倉中將易裂變燃料和螢石粉製成易裂變燃料球，用來製作下一階的機械精華。"]
+			dependencies: ["3E8F024835BB58F7"]
+			id: "56E72EB694287116"
+			tasks: [{
+				id: "081EADF184E19536"
+				type: "item"
+				item: "kubejs:fission_pellet"
+			}]
+		}
+		{
+			icon: "minecraft:sugar_cane"
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["4E81E76086558A19"]
+			id: "085C56EE894594B1"
+			tasks: [{
+				id: "14F96EDE05D0F6E7"
+				type: "checkmark"
+				title: "甘蔗"
+			}]
+			rewards: [{
+				id: "6EAB5D9FB8F9DFC0"
+				type: "item"
+				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			icon: "minecraft:egg"
+			x: -1.0d
+			y: -1.5d
+			description: ["請思考過後再使用，恕不退款。替代方案是用麵團批次喚魂取得雞蛋。"]
+			dependencies: ["4E81E76086558A19"]
+			id: "767667B65ECABE77"
+			tasks: [{
+				id: "207B115AC6793C3F"
+				type: "checkmark"
+				title: "雞蛋"
+			}]
+			rewards: [{
+				id: "7D23D09A6A3CC6BF"
+				type: "item"
+				item: "minecraft:chicken_spawn_egg"
+				count: 3
+			}]
+		}
+		{
+			title: "核分裂反應爐"
+			x: 3.5d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "！！！強制性的，之後的任務會需要"
+			description: ["核分裂反應爐是通用機械的大型多方快結構，能燃燒易裂變燃料加熱大量的水產生蒸氣。該如何建造呢？窩不知道，Google 搜尋或找 Youtube 教學吧。它本身並不會發電。請當心核熔毀！將核廢料妥善的處置並確保全程反應爐內有足夠的冷卻液（水）。"]
+			dependencies: ["3E8F024835BB58F7"]
+			id: "2B2DAA2647444F4F"
+			tasks: [
+				{
+					id: "2775BE8442BC35A4"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+				}
+				{
+					id: "4AA0F34B63C1855E"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+				}
+				{
+					id: "57E18EB88364E4EE"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+				}
+				{
+					id: "18081A49D91442C0"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+				}
+			]
+			rewards: [
+				{
+					id: "539659B391A36962"
+					type: "item"
+					item: "mekanism:radioactive_waste_barrel"
+					count: 10
+				}
+				{
+					id: "697B2186AB389257"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "蒸氣渦輪"
+			x: 5.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "最終的大量發電方案"
+			description: ["蒸氣渦輪式另一個大型的多方塊結構，讓你將核分裂反應爐產生的蒸汽來發電，並冷卻成水，可返回反應爐中重複使用。警告：若渦輪內部的電力儲存空間滿了，這會停止冷卻蒸氣，導致很糟的結果，若你依賴蒸氣回水當作反應爐的冷卻劑。同樣的，請上網搜尋如何建造渦輪的教學吧。"]
+			dependencies: ["2B2DAA2647444F4F"]
+			id: "593EEC1F5CA967D5"
+			tasks: [
+				{
+					id: "5BE685BFAB4E0346"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+				}
+				{
+					id: "29F426A8F69DAE89"
+					type: "item"
+					item: "mekanismgenerators:turbine_valve"
+				}
+				{
+					id: "243CC1EE4C9BBF13"
+					type: "item"
+					item: "mekanismgenerators:turbine_vent"
+				}
+				{
+					id: "4869929171368DA3"
+					type: "item"
+					item: "mekanismgenerators:turbine_rotor"
+				}
+				{
+					id: "59E8C6F9EC135A13"
+					type: "item"
+					item: "mekanismgenerators:turbine_blade"
+				}
+				{
+					id: "1589118E7696970F"
+					type: "item"
+					item: "mekanismgenerators:saturating_condenser"
+				}
+				{
+					id: "3F7FFBB3EF3FAA9A"
+					type: "item"
+					item: "mekanismgenerators:rotational_complex"
+				}
+				{
+					id: "269D877736C64988"
+					type: "item"
+					item: "mekanismgenerators:electromagnetic_coil"
+				}
+				{
+					id: "317485D4DF5A2E28"
+					type: "item"
+					item: "mekanism:structural_glass"
+				}
+			]
+			rewards: [{
+				id: "4C494F95D2B34E5B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "烈焰蛋糕"
+			x: 0.0d
+			y: -4.0d
+			description: ["製作烈焰蛋糕胚然後用注入器注入岩漿取得烈焰蛋糕，可提供給烈焰使者動力爐讓它們超級加熱，在某些製作配方中會需要。"]
+			dependencies: ["0850DE0A32947FA8"]
+			id: "13C6D580E33815D5"
+			tasks: [
+				{
+					id: "7E5989D620BABE65"
+					type: "item"
+					item: "create:blaze_cake_base"
+				}
+				{
+					id: "3C1D9AE7CAF566F9"
+					type: "item"
+					item: "create:blaze_cake"
+				}
+			]
+			rewards: [{
+				id: "7862B771EE891969"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			description: ["粉碎地獄石取得地獄麵粉。"]
+			dependencies: [
+				"085C56EE894594B1"
+				"767667B65ECABE77"
+			]
+			id: "0850DE0A32947FA8"
+			tasks: [{
+				id: "446EFFEEECAB24BA"
+				type: "item"
+				item: "create:cinder_flour"
+			}]
+			rewards: [{
+				id: "460D3015EAE7E617"
+				type: "item"
+				item: "create:cinder_flour"
+				count: 16
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			description: ["和之前一樣，把全部所需的材料超級加熱混合攪拌然後...等等，還沒完成嗎？看起來必須想個方法來啟動...或許精煉油能幫上忙？"]
+			dependencies: [
+				"13C6D580E33815D5"
+				"56E72EB694287116"
+				"26277A0FD5DA798E"
+				"0EE1192BF90562ED"
+			]
+			id: "2FE7FB850DB23DC1"
+			tasks: [{
+				id: "74FB67C7495D4ACD"
+				type: "item"
+				item: "kubejs:cube4_inert"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			description: ["用賢者之石將幾個煤炭轉換成密度更大的燃料源。"]
+			dependencies: ["1A67C9B9ABB4E969"]
+			id: "26277A0FD5DA798E"
+			tasks: [{
+				id: "61F50B290D27170B"
+				type: "item"
+				item: "projecte:mobius_fuel"
+			}]
+			rewards: [
+				{
+					id: "4ED93AC66233E67A"
+					type: "item"
+					item: "projecte:mobius_fuel"
+					count: 8
+				}
+				{
+					id: "2199D5BB0F86CA54"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			description: ["通用機械中倒數第二階的電路。"]
+			dependencies: ["1A67C9B9ABB4E969"]
+			id: "0EE1192BF90562ED"
+			tasks: [{
+				id: "630EFAA39D279506"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+			rewards: [{
+				id: "1D8AEA82223D07F2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			shape: "gear"
+			description: ["事實證明，使用精煉油並注入大量能量後，能為機械精華提供啟動它所需的力量，發揮出全部的光彩。"]
+			dependencies: [
+				"7943076114A42DFC"
+				"2FE7FB850DB23DC1"
+			]
+			id: "157D4C0E9C7A0928"
+			tasks: [
+				{
+					id: "121DC9C8822A6410"
+					type: "item"
+					item: "kubejs:cube4"
+				}
+				{
+					id: "777000DE9150BF38"
+					type: "item"
+					item: "kubejs:cube4_packaged"
+				}
+			]
+			rewards: [
+				{
+					id: "7C1787B15B45C8FB"
+					type: "item"
+					item: "kubejs:cube3_packaged"
+					count: 2
+				}
+				{
+					id: "2A5A9D8FDB633CC7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			icon: "minecraft:ancient_debris"
+			x: -1.0d
+			y: 1.5d
+			description: ["能處理成獄髓。"]
+			dependencies: ["4E81E76086558A19"]
+			id: "1AEFCBE4B6A87AE4"
+			tasks: [{
+				id: "1C7E1DA5F037C9C6"
+				type: "checkmark"
+				title: "遠古遺骸"
+			}]
+			rewards: [{
+				id: "195DFA3C6915D188"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			icon: "minecraft:emerald"
+			x: 1.0d
+			y: 1.5d
+			dependencies: ["4E81E76086558A19"]
+			id: "5E91DCD550B96352"
+			tasks: [{
+				id: "39DA9058B9F4F397"
+				type: "checkmark"
+				title: "綠寶石"
+			}]
+			rewards: [{
+				id: "5D740AF328508122"
+				type: "item"
+				item: "minecraft:emerald_ore"
+				count: 2
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.0d
+			description: ["強大的燃料源"]
+			dependencies: ["26277A0FD5DA798E"]
+			optional: true
+			id: "1BA8F6047EC4694E"
+			tasks: [{
+				id: "29CAAD65CDC4EBC6"
+				type: "item"
+				item: "projecte:aeternalis_fuel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -8.0d
+			description: ["等價交換中，強大工具的合成材料。"]
+			dependencies: ["1BA8F6047EC4694E"]
+			optional: true
+			id: "0B14BDB8AF4F57C3"
+			tasks: [{
+				id: "1A9FCA86B142B03B"
+				type: "item"
+				item: "projecte:dark_matter"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -9.0d
+			description: ["放在臺座上時，大幅提升附近機器的運作速度。"]
+			dependencies: ["0B14BDB8AF4F57C3"]
+			optional: true
+			id: "158C15F8B10B3DBB"
+			tasks: [{
+				id: "47E66A5E054D0AC4"
+				type: "item"
+				item: {
+					id: "projecte:watch_of_flowing_time"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "6B429B6F08EAC8BC"
+				type: "item"
+				item: "projecte:dm_pedestal"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -9.0d
+			shape: "rsquare"
+			subtitle: "摸斗嗨壓哭"
+			description: ["因為內部 RF 傳輸限制，當用時間洪流懷錶加速時，熱力的機器通常無法正常運作。如何解決？當然就是增加傳輸上限！機器的理想升級配置是一個諧振整合組件和三個局部時間不穩定器。"]
+			dependencies: [
+				"157D4C0E9C7A0928"
+				"158C15F8B10B3DBB"
+			]
+			optional: true
+			id: "1F4DCE63D7FA0449"
+			tasks: [{
+				id: "23AAE391F8B8AA17"
+				type: "item"
+				item: {
+					id: "kubejs:time_augment"
+					Count: 1b
+					tag: {
+						AugmentData: {
+							Type: "Machine"
+							MachineEnergy: 0.75d
+							MachinePower: 1.0d
+							RFXfer: 20.0d
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "294823914E17CB0E"
+				type: "item"
+				item: {
+					id: "kubejs:time_augment"
+					Count: 1b
+					tag: {
+						AugmentData: {
+							Type: "Machine"
+							MachineEnergy: 0.75d
+							MachinePower: 1.0d
+							RFXfer: 20.0d
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "EMC 連接器？ 太可笑了..."
+			description: ["轉換介面是個有用的方塊，能讓你的數位儲存系統直接從你的 EMC 轉換桌取出並放入物品，用精緻儲存的輸入輸出總線替代 EMC 連接器。"]
+			dependencies: ["4E81E76086558A19"]
+			id: "1D17BB2C9280B0C7"
+			tasks: [{
+				id: "57948E436FCBF75C"
+				type: "item"
+				item: "projectexpansion:transmutation_interface"
+			}]
+		}
+	]
+}

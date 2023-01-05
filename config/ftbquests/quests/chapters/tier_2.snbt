@@ -1,0 +1,882 @@
+{
+	id: "032540945468AB53"
+	group: ""
+	order_index: 4
+	filename: "tier_2"
+	title: "第 2 階：動力機械與沉浸工程"
+	icon: "kubejs:cube2"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "第 2 階的材料"
+			icon: "kubejs:cube1"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "這些東西是... 活著的嗎？"
+			description: ["忽然間，基礎機械精華開口跟你說話，賦予你各種材料的知識，讓你能隨意的轉換出它們。"]
+			dependencies: ["7A0CB1037E6BE4D7"]
+			id: "167C9AF69BB16B8B"
+			tasks: [{
+				id: "4E0FFF9832476439"
+				type: "checkmark"
+				title: "第 2 階"
+			}]
+		}
+		{
+			icon: "minecraft:diamond"
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "3E70974646D13160"
+			tasks: [{
+				id: "7ADB028F3D126F5F"
+				type: "checkmark"
+				title: "鑽石"
+			}]
+			rewards: [{
+				id: "3E296E5BD281BD41"
+				type: "item"
+				item: "minecraft:diamond_ore"
+			}]
+		}
+		{
+			icon: "minecraft:lapis_lazuli"
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "45E6447D17E3E9FE"
+			tasks: [{
+				id: "42376ED93828C59F"
+				type: "checkmark"
+				title: "青金石"
+			}]
+			rewards: [{
+				id: "5B7761A892DCB09B"
+				type: "item"
+				item: "minecraft:lapis_ore"
+				count: 8
+			}]
+		}
+		{
+			icon: "minecraft:netherrack"
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "0F28231FB970AA04"
+			tasks: [{
+				id: "418E2BFD6F1B022A"
+				type: "checkmark"
+				title: "地獄石"
+			}]
+			rewards: [{
+				id: "2A2F78C9570ED837"
+				type: "item"
+				item: "minecraft:netherrack"
+				count: 32
+			}]
+		}
+		{
+			icon: "minecraft:soul_sand"
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["0F28231FB970AA04"]
+			id: "57C0D867E451666D"
+			tasks: [{
+				id: "6780E14F184EC655"
+				type: "checkmark"
+				title: "靈魂砂"
+			}]
+			rewards: [{
+				id: "1A31500ACADDED17"
+				type: "item"
+				item: "minecraft:soul_sand"
+				count: 32
+			}]
+		}
+		{
+			icon: "create:zinc_ingot"
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "0FD59AE2D88297F3"
+			tasks: [{
+				id: "7B252E5DBF4C53C9"
+				type: "checkmark"
+				title: "鋅"
+			}]
+			rewards: [{
+				id: "3654084581C677AF"
+				type: "item"
+				item: "create:raw_zinc"
+			}]
+		}
+		{
+			title: "盡情發揮創意"
+			x: 0.0d
+			y: -3.0d
+			description: ["為了發展動力機械，你需要大量的安山岩。最初可用鵝卵石和高等共價粉或石英合成，一旦你取得機械鍛壓機後，可用礫石、燧石和岩漿製成。"]
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "5F73D5F328C236A9"
+			tasks: [
+				{
+					id: "4659928179B09A0D"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "43CF504D18D80E62"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+			]
+			rewards: [
+				{
+					id: "27426FAABF404269"
+					type: "item"
+					item: "create:cogwheel"
+					count: 16
+				}
+				{
+					id: "497814E023742F5F"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 16
+				}
+				{
+					id: "1C8E3B13FE9765DB"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 16
+				}
+				{
+					id: "6EBB19C03D7E320B"
+					type: "item"
+					item: "create:shaft"
+					count: 16
+				}
+				{
+					id: "6E06E0177879977A"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "5441CD08DB7CDD08"
+					type: "item"
+					item: "minecraft:kelp"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "動力機械的動力來源"
+			x: 0.0d
+			y: -4.5d
+			description: ["為了使用動力機械的機器，需要轉動力。有很多方法可以做到，各有優缺。透過 JEI 搜尋這些動力源並在上放按住\"W\"來學習更多。"]
+			dependencies: ["5F73D5F328C236A9"]
+			id: "7C0D8A15D01EC79E"
+			tasks: [{
+				id: "67C1AF6117A80F89"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:water_wheel"
+								Count: 1b
+							}
+							{
+								id: "create:windmill_bearing"
+								Count: 1b
+							}
+							{
+								id: "create:encased_fan"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "06F39F5878944945"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			description: ["有了機械攪拌器後，你能將無序合成的配方自動化，以及特定於攪拌器的物品和流體配方。"]
+			dependencies: ["5F73D5F328C236A9"]
+			id: "09E7EB6E38E84886"
+			tasks: [
+				{
+					id: "490E23726B73B21F"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "49C678D1F46259A9"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [{
+				id: "10C7F429CDF6E94E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			description: ["鼓風機有許多用途，推走或拉進實體、不須燃料的燒製和物品洗滌等。記住：大部分動力機械的機器可在物品上按住\"W\"來學習更多。"]
+			dependencies: ["5F73D5F328C236A9"]
+			id: "6DB9CDAA51747A17"
+			tasks: [{
+				id: "22A72426F98C212C"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "082B0F37654EE0A8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			description: ["機械鍛壓機提供了一種不需 RF 的方式將錠製成板。"]
+			dependencies: ["5F73D5F328C236A9"]
+			id: "662DE7460CCF2AA7"
+			tasks: [
+				{
+					id: "0B1288DE703C62EB"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "5ECDC5EFEA029617"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+			rewards: [{
+				id: "36C070A70E586552"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			description: ["動力機械的輸送帶以可控的轉速來傳輸物品。與漂亮管道相比各有優劣，因此這個任務是可選的。"]
+			dependencies: ["5F73D5F328C236A9"]
+			optional: true
+			id: "388F7E8E6658980D"
+			tasks: [{
+				id: "32FFCBAC2EFF492D"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "751F99F0E75F37B0"
+				type: "item"
+				item: "create:andesite_funnel"
+				count: 2
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.0d
+			description: ["用水洗滌靈魂砂，取得大量的石英。"]
+			dependencies: ["6DB9CDAA51747A17"]
+			id: "638EE765C8F23D1A"
+			tasks: [{
+				id: "0BA8192E6C74F3FA"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+			rewards: [
+				{
+					id: "75C8D7D0F91C2163"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 16
+				}
+				{
+					id: "0BA610FB0963A21E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			icon: "immersiveengineering:seed"
+			x: -1.0d
+			y: -1.0d
+			description: ["可用工業大麻纖維製成堅韌布料和線。"]
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "1D1148421443BCF1"
+			tasks: [{
+				id: "5C2A4057E52E27FD"
+				type: "checkmark"
+				title: "工業大麻種子"
+			}]
+			rewards: [{
+				id: "25DAB80917C280C2"
+				type: "item"
+				item: "immersiveengineering:seed"
+				count: 8
+			}]
+		}
+		{
+			icon: "immersiveengineering:manual"
+			x: -3.5d
+			y: -3.0d
+			description: ["沉浸工程增加了它自己的一套機器，發電機和物流方式。更重要的是，這是你第一個鋼的來源。"]
+			dependencies: ["5F73D5F328C236A9"]
+			id: "2ECECEF6F26FEEDD"
+			tasks: [{
+				id: "6FF50A92C97AC7DF"
+				type: "checkmark"
+				title: "沉浸其中"
+			}]
+			rewards: [
+				{
+					id: "45EEC5A4B1D12626"
+					type: "item"
+					item: "immersiveengineering:manual"
+				}
+				{
+					id: "0BA8A59ECD0BE1CC"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "焦爐與焦炭"
+			x: -5.0d
+			y: -3.0d
+			description: ["用焦爐磚蓋個 3x3x3 的立方體，然後用工程師槌子右鍵中央的方塊，製作焦爐。這能讓你（緩慢的）從煤炭轉換成焦炭和雜酚油。"]
+			dependencies: ["2ECECEF6F26FEEDD"]
+			id: "62EFBE3479276302"
+			tasks: [
+				{
+					id: "1E5C56F1FAD78137"
+					type: "item"
+					item: "immersiveengineering:cokebrick"
+					count: 27L
+				}
+				{
+					id: "0D825491E91AA464"
+					type: "item"
+					item: "immersiveengineering:coal_coke"
+				}
+			]
+			rewards: [
+				{
+					id: "1CB04CEE1A777047"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2A734C17C2CE839E"
+					type: "item"
+					item: "immersiveengineering:coal_coke"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "高爐與鋼"
+			x: -6.5d
+			y: -3.0d
+			description: ["用高爐磚蓋個 3x3x3 的立方體，然後用工程師槌子右鍵中央的方塊，製作高爐。這能讓你將鐵和焦煤轉換成鋼和礦渣。替代方案是，用感應爐製作但會消耗大量的 RF。"]
+			dependencies: ["62EFBE3479276302"]
+			id: "3F35726F4CE8AE5E"
+			tasks: [{
+				id: "5258926F0DE8894E"
+				type: "item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "576359C9FBB85BD1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "33E056A32F5261CE"
+					type: "item"
+					item: "mekanism:ingot_steel"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -4.5d
+			description: ["太多雜酚油或礦渣且不知道要拿來幹嘛嗎？製作銷毀器能自動銷毀這些垃圾。"]
+			dependencies: ["62EFBE3479276302"]
+			optional: true
+			id: "43D3AF6AA4C1D1D1"
+			tasks: [{
+				id: "31FEC9C64F81BBE9"
+				type: "item"
+				item: "thermal:device_nullifier"
+			}]
+		}
+		{
+			icon: "thermal:gold_gear"
+			x: -3.5d
+			y: 0.0d
+			description: ["若你想要繼續自動化的路程，需要製作新的機器和合金來幫助你。"]
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "0F60C65F3D731A56"
+			tasks: [{
+				id: "54E03CBC83BD6270"
+				type: "checkmark"
+				title: "繼續熱力的自動化"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			description: ["不變鋼可在感應爐中用 2 鐵 1 鎳製成。"]
+			dependencies: [
+				"0F60C65F3D731A56"
+				"07DB08AC0D1516A4"
+			]
+			id: "60D3472A8BB177C9"
+			tasks: [{
+				id: "6EA7E41FC1D0B712"
+				type: "item"
+				item: "thermal:invar_ingot"
+			}]
+			rewards: [{
+				id: "007267A8F7F2FDCA"
+				type: "item"
+				item: "thermal:invar_ingot"
+				count: 16
+			}]
+		}
+		{
+			title: "青銅錠"
+			x: -5.0d
+			y: 0.5d
+			description: ["青銅可在感應爐中用 3 鐵 1 錫製成。"]
+			dependencies: [
+				"0F60C65F3D731A56"
+				"07DB08AC0D1516A4"
+			]
+			id: "45DC5DB7E7D45DD5"
+			tasks: [{
+				id: "25672B3F06A73B0D"
+				type: "item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/bronze"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0F4E8846354FAD97"
+				type: "item"
+				item: "thermal:bronze_ingot"
+				count: 16
+			}]
+		}
+		{
+			x: -7.5d
+			y: 0.0d
+			shape: "gear"
+			description: ["靠著你新發現的材料知識和合金，你打算製作一般版本的機械精華，比基礎版本的值更多的 EMC。"]
+			dependencies: [
+				"3F35726F4CE8AE5E"
+				"60D3472A8BB177C9"
+				"45DC5DB7E7D45DD5"
+			]
+			id: "78775CE81571FAC9"
+			tasks: [
+				{
+					id: "7AF77A99BBFD2A5E"
+					type: "item"
+					item: "kubejs:cube2"
+				}
+				{
+					id: "4D649FF0F1DA781F"
+					type: "item"
+					item: "kubejs:cube2_packaged"
+				}
+			]
+			rewards: [
+				{
+					id: "52CC23DCCFDD805C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "672FDAB6D9B8D23D"
+					type: "item"
+					item: "kubejs:cube2_packaged"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "沉浸發電機"
+			x: -4.5d
+			y: -4.5d
+			description: ["有了雜酚油後，可以製作防腐木，然後可以做成發電機。這些發電機被動產生 RF 且無須消耗任何材料。"]
+			dependencies: ["62EFBE3479276302"]
+			optional: true
+			id: "7516EFF9A22748A3"
+			tasks: [{
+				id: "672A0BF2B9E99ACA"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "immersiveengineering:watermill"
+								Count: 1b
+							}
+							{
+								id: "immersiveengineering:windmill"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "通用機械的管道"
+			icon: "mekanism:configurator"
+			x: -8.5d
+			y: -3.0d
+			description: ["有了鋼後，可以製作通用機械的基礎管道，可更簡單的安排物品，流體或能量的傳輸。"]
+			dependencies: ["3F35726F4CE8AE5E"]
+			optional: true
+			id: "0B10D556104887A9"
+			tasks: [{
+				id: "76C8E57263E432D3"
+				type: "checkmark"
+				title: "通用機械的管道"
+			}]
+			rewards: [{
+				id: "6D26A3CC75F15790"
+				type: "item"
+				item: "mekanism:configurator"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -4.5d
+			description: ["通用機械的物品傳輸解決方案。"]
+			dependencies: ["0B10D556104887A9"]
+			optional: true
+			id: "38555B7B5AE725D4"
+			tasks: [{
+				id: "12FDEA0FDA9AAC83"
+				type: "item"
+				item: "mekanism:basic_logistical_transporter"
+			}]
+			rewards: [{
+				id: "0657F9353985185F"
+				type: "item"
+				item: "mekanism:basic_logistical_transporter"
+				count: 16
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.5d
+			description: ["通用機械的流體傳輸解決方案。"]
+			dependencies: ["0B10D556104887A9"]
+			optional: true
+			id: "6559161759CB03B7"
+			tasks: [{
+				id: "69111C75EB376255"
+				type: "item"
+				item: "mekanism:basic_mechanical_pipe"
+			}]
+			rewards: [{
+				id: "2EC367DFD9875A54"
+				type: "item"
+				item: "mekanism:basic_mechanical_pipe"
+				count: 16
+			}]
+		}
+		{
+			x: -9.5d
+			y: -4.5d
+			description: ["通用機械的能量傳輸解決方案。"]
+			dependencies: ["0B10D556104887A9"]
+			optional: true
+			id: "08C76B396B7ACA4B"
+			tasks: [{
+				id: "648F49954A240107"
+				type: "item"
+				item: "mekanism:basic_universal_cable"
+			}]
+			rewards: [{
+				id: "5F552566F2C24AC5"
+				type: "item"
+				item: "mekanism:basic_universal_cable"
+				count: 16
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "重要：請閱讀任務敘述"
+			description: ["珠寶能源爐在這個模組包中有個特別的用途：它能使用機械精華產生大量的 RF。"]
+			dependencies: ["0F60C65F3D731A56"]
+			id: "5C0C4A60E68CD434"
+			tasks: [{
+				id: "6080E30D0B427DAC"
+				type: "item"
+				item: "thermal:dynamo_lapidary"
+			}]
+			rewards: [{
+				id: "3987C99375CD522F"
+				type: "item"
+				item: "kubejs:cube1"
+				count: 16
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			description: ["整合組件可安裝到熱力的機器中增加基礎數值。"]
+			dependencies: ["0F60C65F3D731A56"]
+			id: "6A69E64613966190"
+			tasks: [{
+				id: "4C613ACC70C3D281"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+			rewards: [{
+				id: "2F04E8C4EF50CF1C"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			description: ["熱解爐是 RF 版本的焦爐。"]
+			dependencies: [
+				"0F60C65F3D731A56"
+				"62EFBE3479276302"
+			]
+			id: "01F6B599E8AF1370"
+			tasks: [{
+				id: "7535D116FA67D640"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+			rewards: [{
+				id: "141D0ED9713F9074"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+				count: 8
+			}]
+		}
+		{
+			icon: "minecraft:cactus"
+			x: -1.0d
+			y: 1.0d
+			description: ["另一種簡單的 EMC 農場"]
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "158062BBA9E40847"
+			tasks: [{
+				id: "236710BAA73A5CF7"
+				type: "checkmark"
+				title: "仙人掌"
+			}]
+			rewards: [{
+				id: "43095D7168969172"
+				type: "item"
+				item: "minecraft:cactus"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			description: ["輔助仙人掌能移除你不想要的副產物。"]
+			dependencies: [
+				"158062BBA9E40847"
+				"6A69E64613966190"
+			]
+			optional: true
+			id: "22AE3DD6943A96AB"
+			tasks: [{
+				id: "744D96677974079D"
+				type: "item"
+				item: "thermal:machine_null_augment"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			description: ["時間之瓶可暫時將方塊加速，能加速多少就取決於它在你身上放了多久。"]
+			dependencies: ["3E70974646D13160"]
+			id: "0D9714FC638EE0D9"
+			tasks: [{
+				id: "26F35336D6F3ADEB"
+				type: "item"
+				item: {
+					id: "tiab:time_in_a_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "142DDEC7A803F07F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			description: ["熔岩爐可將鵝卵石和地獄石液化成岩漿。液化地獄石消耗較少的 RF 也就是說更快。"]
+			dependencies: ["0F60C65F3D731A56"]
+			id: "42C45408AC05B498"
+			tasks: [{
+				id: "5465F96CB57980E0"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+			rewards: [{
+				id: "0F3B89038F35F644"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			icon: "minecraft:bone"
+			x: 1.0d
+			y: 1.0d
+			description: ["把骨頭粉碎成骨粉來撒出草並取得食物來源的種子。"]
+			dependencies: ["167C9AF69BB16B8B"]
+			id: "3E8161FF2C2AF01F"
+			tasks: [{
+				id: "0DEA348928DD0F46"
+				type: "checkmark"
+				title: "骨頭"
+			}]
+			rewards: [{
+				id: "313A01BDE8220A12"
+				type: "item"
+				item: "minecraft:bone"
+			}]
+		}
+		{
+			title: "粉碎輪"
+			x: 2.0d
+			y: -2.5d
+			description: ["粉碎輪可更進一步的提高礦物處理產量。"]
+			dependencies: ["5F73D5F328C236A9"]
+			id: "3CBA430E4EC15E5D"
+			tasks: [{
+				id: "1C22B4909962568D"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["可將堅韌布料燒成皮革。"]
+			dependencies: ["1D1148421443BCF1"]
+			id: "02C583C6E7F1EDD0"
+			tasks: [{
+				id: "32CB4D43FC955228"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+			rewards: [{
+				id: "4CBB11E919669C7E"
+				type: "item"
+				item: "minecraft:leather"
+				count: 16
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			shape: "hexagon"
+			description: ["花費 EMC 的可再生食物。"]
+			dependencies: ["3E8161FF2C2AF01F"]
+			optional: true
+			id: "6CB8640C5BF269DC"
+			tasks: [{
+				id: "5120FC89CDF0BECF"
+				type: "item"
+				item: "projectexpansion:infinite_steak"
+			}]
+		}
+		{
+			title: "紅石的替代來源"
+			icon: "minecraft:redstone"
+			x: 2.5d
+			y: -1.0d
+			description: ["將地獄石粉碎成地獄麵粉，用來當成紅石的替代來源。"]
+			dependencies: ["0F28231FB970AA04"]
+			optional: true
+			id: "58CDD90E19203B8F"
+			tasks: [{
+				id: "15D53E57CB74571E"
+				type: "item"
+				item: "create:cinder_flour"
+			}]
+			rewards: [{
+				id: "1F98D5B2DA9DD4AE"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 16
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			shape: "hexagon"
+			subtitle: "無限量的各色染料"
+			description: ["染料調色器消耗紅色，綠色和黃色染料，並將它們混合成其他的染料顏色。你能透過燒仙人掌取得綠色染料，而紅色和綠色染料可透過對草地灑骨粉取得的花製成。"]
+			dependencies: ["158062BBA9E40847"]
+			optional: true
+			id: "508D237427CDE318"
+			tasks: [{
+				id: "078BC4A0FDC88F04"
+				type: "item"
+				item: "industrialforegoing:dye_mixer"
+			}]
+		}
+	]
+}

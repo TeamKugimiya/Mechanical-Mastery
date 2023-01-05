@@ -1,0 +1,192 @@
+{
+	id: "7C55129B7A170351"
+	group: ""
+	order_index: 1
+	filename: "configuration_panel"
+	title: "調整面板"
+	icon: "mekanism:module_energy_unit"
+	disable_toast: true
+	subtitle: ["在此調整你理想中的配置"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "趕走月亮"
+			icon: "minecraft:sunflower"
+			x: -5.5d
+			y: -4.0d
+			subtitle: "滾開！"
+			description: ["不喜歡夜裡的黑暗嗎？只要點這個按鈕就能永遠消除黑暗帶來的恐懼！"]
+			id: "1450957C6F72830F"
+			tasks: [{
+				id: "2A9A8F20154FDA0F"
+				type: "checkmark"
+				title: "偷走月亮"
+			}]
+			rewards: [
+				{
+					id: "5B5959E4689A32A0"
+					type: "questsadditions:repeat"
+					title: "停止時間流動"
+					auto: "enabled"
+					table_id: 6741767295260868068L
+				}
+				{
+					id: "62C24F14C3E8A8CB"
+					type: "questsadditions:repeat"
+					title: "變成中午"
+					auto: "enabled"
+					table_id: 1457763491092482768L
+				}
+			]
+		}
+		{
+			title: "月亮，回來吧！"
+			icon: "minecraft:ender_pearl"
+			x: -5.5d
+			y: -3.0d
+			shape: "square"
+			subtitle: "我不是那個意思！"
+			description: ["若你改變心意，隨時可以反悔。"]
+			id: "5BFF3035C0DE3C64"
+			tasks: [{
+				id: "23644FED7BBF6A9F"
+				type: "checkmark"
+				title: "讓我回去！"
+			}]
+			rewards: [{
+				id: "5774AEF29E538BA2"
+				type: "questsadditions:repeat"
+				auto: "enabled"
+				table_id: 3127175903169831962L
+			}]
+		}
+		{
+			title: "...其實，我打算死在那"
+			icon: "minecraft:skeleton_skull"
+			x: -4.0d
+			y: -4.0d
+			subtitle: "希望我的物品沒有掉入虛空..."
+			description: ["不想每次死亡都要去找墳墓撿屍的話，你可以選擇防噴（不然就不要死，應該蠻簡單的吧）"]
+			id: "5D8240A0B2779AC3"
+			tasks: [{
+				id: "64C822C3D6EF50A8"
+				type: "checkmark"
+				title: "“我就是想死在那”"
+			}]
+			rewards: [{
+				id: "0CFAED89841C1677"
+				type: "questsadditions:repeat"
+				auto: "enabled"
+				table_id: 2523283000924372420L
+			}]
+		}
+		{
+			title: "反正我身上的東西不重要！"
+			icon: "minecraft:lava_bucket"
+			x: -4.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "再來啊，世界的惡意！"
+			description: ["回到每次死亡會噴裝的狀態。"]
+			id: "284989B4A4B34E7F"
+			tasks: [{
+				id: "41A1E2AE3EA4A2CA"
+				type: "checkmark"
+				title: "\"其實，我熱愛挑戰自己\""
+			}]
+			rewards: [{
+				id: "7F37E790BECA406F"
+				type: "questsadditions:repeat"
+				auto: "enabled"
+				table_id: 6877507471908056940L
+			}]
+		}
+		{
+			icon: "minecraft:white_bed"
+			x: -2.5d
+			y: -4.0d
+			subtitle: "問就 0，沒人喜歡"
+			description: ["按下這個按鈕後，就不用只為了防止夜魅生成一直睡覺了。"]
+			id: "755DA9653FCF0AB2"
+			tasks: [{
+				id: "190091CF33EAFD5F"
+				type: "checkmark"
+				title: "到底誰喜歡夜魅？"
+			}]
+			rewards: [{
+				id: "3C52095A71411E85"
+				type: "questsadditions:repeat"
+				auto: "enabled"
+				table_id: 5031915644954519282L
+			}]
+		}
+		{
+			icon: "minecraft:cobweb"
+			x: -2.5d
+			y: -3.0d
+			shape: "square"
+			subtitle: "這個按鈕看起來跟新的一樣，感覺沒人按過它..."
+			description: ["沒什麼好說的，反正你不會點它"]
+			id: "5CDD589A3F6A2C4D"
+			tasks: [{
+				id: "4743597BA0D6BF66"
+				type: "checkmark"
+				title: "\"其實我喜歡夜魅\""
+			}]
+			rewards: [{
+				id: "1746CEE073B754EE"
+				type: "questsadditions:repeat"
+				auto: "enabled"
+				table_id: 5495574862062641215L
+			}]
+		}
+		{
+			title: "為什麼又下雨了？"
+			icon: "quark:bottled_cloud"
+			x: -1.0d
+			y: -4.0d
+			subtitle: "當我正要截圖的時候..."
+			description: ["若你不想被那隨機的雨聲打斷你的想法的話，就關掉下雨吧，簡單暴力。"]
+			id: "741B7428F9634CEF"
+			tasks: [{
+				id: "160746D5843C697B"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "2EFBAF17E0518750"
+					type: "questsadditions:repeat"
+					auto: "enabled"
+					table_id: 6386785087915326975L
+				}
+				{
+					id: "4BA7DB87B9315AE4"
+					type: "questsadditions:repeat"
+					auto: "enabled"
+					table_id: 5038739109671112373L
+				}
+			]
+		}
+		{
+			icon: "minecraft:rose_bush"
+			x: -1.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "打雷也很酷啊！"
+			description: ["想要下雨的話，可以改回來。"]
+			id: "24E60BDA9E928690"
+			tasks: [{
+				id: "47E38F40647084BC"
+				type: "checkmark"
+				title: "但我那可憐的花園呢？"
+			}]
+			rewards: [{
+				id: "4DC7A1E00D298607"
+				type: "questsadditions:repeat"
+				auto: "enabled"
+				table_id: 1578231006101341936L
+			}]
+		}
+	]
+}
