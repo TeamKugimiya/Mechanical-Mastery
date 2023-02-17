@@ -120,7 +120,7 @@ onEvent('item.registry', event => {
 	event.create('enriched_basilic_reagent').displayName('富集基礎試劑');
 	
 	event.create('stable_waste').displayName('穩定的用盡核廢料').tooltip('（已停用）安全的儲存或處置方式');
-	event.create('incomplete_final_shard').displayName('未完成的最終之星碎片');
+	event.create('incomplete_final_shard').displayName('未完成的終極之星碎片');
 
 	event.create('incomplete_time_augment').displayName('時間不穩定器元件').texture('kubejs:item/basic_package');
 	event.create('time_augment').displayName('局部時間不穩定器').tooltip('使機器與時間洪流懷錶相容。最好與諧振整合元件一起使用')

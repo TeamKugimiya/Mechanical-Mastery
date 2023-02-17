@@ -6,7 +6,7 @@
 	title: "調整面板"
 	icon: "mekanism:module_energy_unit"
 	disable_toast: true
-	subtitle: ["在此調整你理想中的配置"]
+	subtitle: ["在此調整你理想中的設定"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
