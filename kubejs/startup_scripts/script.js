@@ -103,7 +103,7 @@ onEvent('item.registry', event => {
 	
 	event.create('blaze_effigy').displayName('烈焰使者雕像').tooltip('右鍵召喚烈焰使者');
 	event.create('blizz_effigy').displayName('暴雪使者雕像').tooltip('右鍵召喚暴雪使者');
-	event.create('blitz_effigy').displayName('狂風使者雕像').tooltip('右鍵召喚狂風使者');
+	event.create('blitz_effigy').displayName('雷霆使者雕像').tooltip('右鍵召喚雷霆使者');
 	event.create('basalz_effigy').displayName('岩石使者雕像').tooltip('右鍵召喚岩石使者');
 	event.create('dormant_effigy').displayName('沉睡雕像').tooltip('孕育創造生命的力量，只是尚未覺醒');
 	
@@ -119,14 +119,14 @@ onEvent('item.registry', event => {
 	event.create('basilic_reagent').displayName('基礎試劑');
 	event.create('enriched_basilic_reagent').displayName('富集基礎試劑');
 	
-	event.create('stable_waste').displayName('穩定用盡的核廢料').tooltip('(已禁用) 安全的儲存或處置方式');
+	event.create('stable_waste').displayName('穩定的用盡核廢料').tooltip('（已停用）安全的儲存或處置方式');
 	event.create('incomplete_final_shard').displayName('未完成的最終之星碎片');
 
-	event.create('incomplete_time_augment').displayName('時間不穩定器組件').texture('kubejs:item/basic_package');
-	event.create('time_augment').displayName('局部時間不穩定器').tooltip('使機器與時間洪流懷錶相容。最好與諧振整合組件一起使用')
+	event.create('incomplete_time_augment').displayName('時間不穩定器元件').texture('kubejs:item/basic_package');
+	event.create('time_augment').displayName('局部時間不穩定器').tooltip('使機器與時間洪流懷錶相容。最好與諧振整合元件一起使用')
 
 	event.create('incomplete_creative_blaze_cake').displayName('未完成的創造模式烈焰蛋糕');
-	event.create('incomplete_creative_upgrade').displayName('未完成的創造模式升級');
+	event.create('incomplete_creative_upgrade').displayName('未完成的創造模式增強元件');
 
 	// industrial foregoing items
 	event.create('incomplete_simple_frame').displayName('未完成的中級機械框架').texture('kubejs:item/basic_package');
