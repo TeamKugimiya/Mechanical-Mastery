@@ -1,0 +1,4 @@
+darkMojangStudiosBackground:true
+resourcePacks:["vanilla","mod_resources","packmenu","quark:emote_resources","file/ModsTranslationPack-1.18.x.zip","file/Mechanical-Mastery-Patches.zip"]
+incompatibleResourcePacks:["packmenu","quark:emote_resources"]
+lang:zh_tw
