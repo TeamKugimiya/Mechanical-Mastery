@@ -1,0 +1,747 @@
+{
+	id: "302898E288734A9B"
+	group: ""
+	order_index: 3
+	filename: "tier_1"
+	title: "第 1 階：熱力"
+	icon: "kubejs:cube1"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "一切的起點"
+			description: ["歡迎來到本模組包，你的最終目標是自動化製作所有的機械水晶。透過此任務書，你會取得完成這份工作的許多必備的基礎資源。這些資源使用前，切記先在轉換桌中學習起來，恕不退款！"]
+			id: "491EB18107FC8776"
+			tasks: [{
+				id: "2ECDA834E28D3B2A"
+				type: "checkmark"
+				title: "歡迎！"
+				icon: {
+					id: "projecte:philosophers_stone"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2B1CF5D4EB1EDA21"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+				{
+					id: "077BE18AA115FE8A"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "105A744E3599331B"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "256039FB4D392001"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "18DBDDA7AE4B983D"
+					type: "item"
+					item: "projecte:transmutation_table"
+				}
+				{
+					id: "578138C088B7AE15"
+					type: "item"
+					item: "minecraft:bread"
+					count: 64
+				}
+				{
+					id: "2963665AEE0E7133"
+					type: "item"
+					item: "minecraft:white_bed"
+				}
+				{
+					id: "109FB72945533DB3"
+					type: "item"
+					item: "minecraft:coal_ore"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "第 1 階的材料"
+			x: 1.5d
+			y: 0.0d
+			subtitle: "序章..."
+			description: ["製作一個原版的鵝卵石製造機來解鎖這些基礎資源。\"切記\"：務必先學習再使用！"]
+			dependencies: ["491EB18107FC8776"]
+			id: "5D6996CC9444ADE7"
+			tasks: [{
+				id: "5C95D4E16A8DDB14"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+			rewards: [{
+				id: "6214D2CC53B31C53"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64
+			}]
+		}
+		{
+			title: "木頭"
+			x: -1.5d
+			y: 0.0d
+			description: ["在能自動化取得 EMC 前，一種不錯的方法是種樹，因為原木有一些 EMC。"]
+			dependencies: ["491EB18107FC8776"]
+			id: "258878D4F87E9F1E"
+			tasks: [{
+				id: "08E661E4E8986BF8"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+			rewards: [{
+				id: "3C291BB62FF867F2"
+				type: "item"
+				item: "minecraft:oak_sapling"
+				count: 8
+			}]
+		}
+		{
+			icon: "minecraft:iron_ingot"
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "3E9816CC28A63F1E"
+			tasks: [{
+				id: "21967A135E5A4E5F"
+				type: "checkmark"
+				title: "鐵"
+			}]
+			rewards: [{
+				id: "77408D9CF647BDE3"
+				type: "item"
+				item: "minecraft:raw_iron"
+				count: 16
+			}]
+		}
+		{
+			icon: "minecraft:gold_ingot"
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "4D62BC450EDA35F2"
+			tasks: [{
+				id: "56DAE7BBD8C03D06"
+				type: "checkmark"
+				title: "黃金"
+			}]
+			rewards: [{
+				id: "440ECADAC1835B8C"
+				type: "item"
+				item: "minecraft:raw_gold"
+				count: 8
+			}]
+		}
+		{
+			icon: "minecraft:copper_ingot"
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "2B6B7D3F3994D04F"
+			tasks: [{
+				id: "129702BDFCF53F84"
+				type: "checkmark"
+				title: "銅"
+			}]
+			rewards: [{
+				id: "7D7ABFBC40F0141D"
+				type: "item"
+				item: "minecraft:raw_copper"
+				count: 16
+			}]
+		}
+		{
+			icon: "thermal:silver_ingot"
+			x: 2.5d
+			y: 1.0d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "412842B354C94B4D"
+			tasks: [{
+				id: "71DC41304EA1CCBF"
+				type: "checkmark"
+				title: "銀"
+			}]
+			rewards: [{
+				id: "528529B1D1FCCDC1"
+				type: "item"
+				item: "thermal:raw_silver"
+			}]
+		}
+		{
+			icon: "thermal:lead_ingot"
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "113A2B5A7CC48A73"
+			tasks: [{
+				id: "4B428A080DD87786"
+				type: "checkmark"
+				title: "鉛"
+			}]
+			rewards: [{
+				id: "77137AD9DCECADC2"
+				type: "item"
+				item: "mekanism:raw_lead"
+			}]
+		}
+		{
+			icon: "minecraft:redstone"
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "5B0813AE6F64E7C0"
+			tasks: [{
+				id: "63ACEFFE0D2618BF"
+				type: "checkmark"
+				title: "紅石"
+			}]
+			rewards: [{
+				id: "047BB67E95397EF1"
+				type: "item"
+				item: "minecraft:redstone_ore"
+				count: 8
+			}]
+		}
+		{
+			title: "開始自動化：熱力"
+			x: 1.5d
+			y: -3.0d
+			description: ["有了這些原礦後，製作你的第一台發電機：史特林能源爐，不是件難事。雖然不是太理想的發電方案，但在前期非常重要。"]
+			dependencies: ["3E9816CC28A63F1E"]
+			id: "19A22A30A2BFEDAB"
+			tasks: [{
+				id: "5F6664EDD2BFC0A3"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+			rewards: [{
+				id: "57AA7677EF15CC50"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "磨粉機"
+			x: 1.5d
+			y: -5.0d
+			subtitle: "終於，有點像樣的礦物處理了！"
+			description: ["你大概已經發現，在這個模組包中，一般燒製原礦只能給你一個錠。慶幸的是，有了磨粉機後，能從原礦中得到 1 - 2 個粉來改善這個狀況！"]
+			dependencies: ["19A22A30A2BFEDAB"]
+			id: "13AA6AFAF9C8DD0B"
+			tasks: [{
+				id: "36592AE3FE51D5B9"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+			rewards: [{
+				id: "061C05EC445B401B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "磨粉機催化劑"
+			x: 1.5d
+			y: -6.0d
+			description: ["在磨粉機中，有些物品可以當成\"催化劑\"使用，增加主產物和副產物的機率，還有一些調整。用 JEI 查看這些催化劑吧！"]
+			dependencies: ["13AA6AFAF9C8DD0B"]
+			id: "3434FB0FA0702973"
+			tasks: [{
+				id: "76E571A53E0C24D7"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+			rewards: [
+				{
+					id: "53F79A89E3A01C68"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "62F604ABEF1D8C9F"
+					type: "item"
+					item: "minecraft:flint"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "板材和桿材"
+			x: 0.5d
+			y: -2.5d
+			description: ["工程師槌子是取得第一個板和桿的方法。這效率很差，但，未來一定有更好的製作方法..."]
+			dependencies: ["3E9816CC28A63F1E"]
+			id: "19499868D936A165"
+			tasks: [
+				{
+					id: "24292B7DFF1162E3"
+					type: "item"
+					title: "Any #forge:plates"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:plates"
+						}
+					}
+				}
+				{
+					id: "32988525234A9483"
+					type: "item"
+					title: "Any #forge:rods"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:rods"
+						}
+					}
+				}
+				{
+					id: "3146CFF5CA32B5FA"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0CD4C1F6848C1355"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "minecraft:clay_ball"
+			x: -3.0d
+			y: 0.0d
+			description: ["黏土可製成紅磚頭，這是自動化和製作配方的另一個重要資源。"]
+			dependencies: ["258878D4F87E9F1E"]
+			id: "2B8F40D3510E2D05"
+			tasks: [{
+				id: "019E0C2501327EBC"
+				type: "checkmark"
+				title: "黏土"
+			}]
+			rewards: [{
+				id: "3F9606F24886C828"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 16
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			description: ["有了多驅衝壓機後，你能自動化工程師槌子做的事甚至更多，不需要消耗耐久且更有效率。你能用它製作板材和更多東西！"]
+			dependencies: [
+				"19A22A30A2BFEDAB"
+				"6039A6C800474F6D"
+			]
+			id: "54983CC37DD93E7A"
+			tasks: [{
+				id: "32825235F7A53270"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+			rewards: [{
+				id: "0077B72A897EB181"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			description: ["感應爐能製作許多之後很有價值的合金。"]
+			dependencies: ["547050DB11C5FFB7"]
+			id: "07DB08AC0D1516A4"
+			tasks: [{
+				id: "366B1B5714C30D04"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+			rewards: [{
+				id: "3D3E26A5B494407C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "感應爐催化劑"
+			x: 2.5d
+			y: -6.0d
+			description: ["和磨粉機一樣，某些\"催化劑\"可用在感應爐中，增加主產物及副產物，能源效率和其他東西。用 JEI 查看更多資訊。"]
+			dependencies: ["07DB08AC0D1516A4"]
+			id: "1A1486F396BCEA3C"
+			tasks: [{
+				id: "1C51B69ECBD925F2"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+			rewards: [
+				{
+					id: "63F601802149EA38"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4F72F3FDA9A3B4E9"
+					type: "item"
+					item: "minecraft:sand"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "衝壓模具"
+			x: -0.5d
+			y: -6.0d
+			description: ["在多驅衝壓機的下方欄位可以放入特殊的模具來改變功能，像是製作齒輪而非板材。這個模組包新增了桿模具，可直接用錠製作桿材。"]
+			dependencies: ["54983CC37DD93E7A"]
+			id: "2746A3F7A98C2134"
+			tasks: [{
+				id: "267A63D03350CEBE"
+				type: "item"
+				title: "Any #thermal:crafting/dies"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "thermal:crafting/dies"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5F49998A6AFA70CB"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "32ACBFB925B3577D"
+					type: "choice"
+					table_id: 1602564825145878379L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			shape: "gear"
+			description: [
+				""
+				"做了一些齒輪和桿後，你打算製作第一個機械精華！這個立方體比起它的配方材料有更高的 EMC，因此若你能把它自動化的話，這會是個很棒的 EMC 來源！"
+			]
+			dependencies: ["19499868D936A165"]
+			id: "7A0CB1037E6BE4D7"
+			tasks: [
+				{
+					id: "0DA904B48F32E904"
+					type: "item"
+					item: "kubejs:cube1"
+				}
+				{
+					id: "2806B1586B29E196"
+					type: "item"
+					item: "kubejs:cube1_packaged"
+				}
+			]
+			rewards: [
+				{
+					id: "5B75C6A7D8E9D38E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "23176832183B31BF"
+					type: "item"
+					item: "kubejs:cube1_packaged"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			description: ["通量熔煉爐讓你能像一般熔爐燒製東西，消耗 RF 而非燃料。"]
+			dependencies: ["19A22A30A2BFEDAB"]
+			id: "2B65C5DE4AA944BA"
+			tasks: [{
+				id: "082AE7EADA5E2A06"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
+			rewards: [{
+				id: "0F55EF2A479BC037"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "基礎電力傳輸"
+			x: 5.0d
+			y: -4.0d
+			description: ["最終，你會想用一台能源爐為多台機器供電。用這些能量線纜把你的機器和發電機連接在一起，以便讓它們共享電力。"]
+			dependencies: ["19A22A30A2BFEDAB"]
+			id: "7DC5EA17257FC5B8"
+			tasks: [{
+				id: "3B341A44F107DC84"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "powah:energy_cable_starter"
+								Count: 1b
+							}
+							{
+								id: "powah:energy_cable_basic"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4128516CC3CF2B67"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0B38C6061A14BE38"
+					type: "item"
+					item: "powah:energy_cable_basic"
+					count: 16
+				}
+			]
+		}
+		{
+			icon: "thermal:tin_ingot"
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "2F86A0F2D202B4B7"
+			tasks: [{
+				id: "55D6D705ABE5F4AC"
+				type: "checkmark"
+				title: "錫"
+			}]
+			rewards: [{
+				id: "69FE01406485C986"
+				type: "item"
+				item: "mekanism:raw_tin"
+			}]
+		}
+		{
+			icon: "immersiveengineering:ingot_aluminum"
+			x: 4.5d
+			y: 0.0d
+			dependencies: ["5D6996CC9444ADE7"]
+			id: "4E3ACB7B16B45645"
+			tasks: [{
+				id: "17750BF1BA8BC6C2"
+				type: "checkmark"
+				title: "鋁"
+			}]
+			rewards: [{
+				id: "6F479738816D1A7F"
+				type: "item"
+				item: "immersiveengineering:raw_aluminum"
+				count: 16
+			}]
+		}
+		{
+			title: "基礎物品傳輸"
+			x: 5.0d
+			y: -3.0d
+			description: ["為了真正實現自動化，你會想要一種有效的方法將物品在機器間傳輸。漏斗太慢且過濾會花太多空間。因此，漂亮管道在早期是個不錯的解決方案。若想避免物品過量傳輸，需要在每個輸出端安裝堆疊限制模組（或是安裝高級抽取模組，但我們還做不得出來）。"]
+			dependencies: ["19A22A30A2BFEDAB"]
+			id: "5B12C19CBD25995E"
+			tasks: [{
+				id: "6E627EA35AE1C664"
+				type: "item"
+				item: "prettypipes:pipe"
+			}]
+			rewards: [
+				{
+					id: "1232AFE722AF8194"
+					type: "item"
+					item: "prettypipes:pipe"
+					count: 16
+				}
+				{
+					id: "1A216B457279F0F1"
+					type: "item"
+					item: "prettypipes:low_extraction_module"
+				}
+				{
+					id: "42202DF002239C0E"
+					type: "item"
+					item: "prettypipes:low_filter_module"
+				}
+				{
+					id: "69BCE6AE223E1C0E"
+					type: "item"
+					item: "prettypipes:stack_size_module"
+				}
+				{
+					id: "6FB2B4AA92BC6DA9"
+					type: "item"
+					item: "prettypipes:wrench"
+				}
+			]
+		}
+		{
+			title: "基礎 EMC 介面"
+			x: 5.0d
+			y: -2.0d
+			description: ["有了基礎 EMC 連接器，你可以自動將物品轉換成 EMC，反之亦然。靠這個，可完全自動化製作機械精華。"]
+			dependencies: ["19A22A30A2BFEDAB"]
+			id: "4AB3B5469D68C46D"
+			tasks: [{
+				id: "4AFCCAA14047AEF0"
+				type: "item"
+				item: "projectexpansion:basic_emc_link"
+			}]
+			rewards: [{
+				id: "2C69027CF205BC78"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "thermal:nickel_ingot"
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["113A2B5A7CC48A73"]
+			id: "44EFFDB0CE9EB078"
+			tasks: [{
+				id: "01B1F78368449929"
+				type: "checkmark"
+				title: "鎳"
+			}]
+			rewards: [{
+				id: "3B45D0E841423BA4"
+				type: "item"
+				item: "thermal:raw_nickel"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.0d
+			description: ["序列裝配台能讓你自動合成物品，只要設定好合成配方並將材料輸入，就能自動合成。"]
+			dependencies: ["19A22A30A2BFEDAB"]
+			id: "387D9ECF1CD0B4F8"
+			tasks: [{
+				id: "29D6E0B76CB72710"
+				type: "item"
+				item: "thermal:machine_crafter"
+			}]
+			rewards: [{
+				id: "56DE53737C24A26C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			shape: "diamond"
+			subtitle: "你不孤單"
+			description: ["EMC 連接器每秒輸出 1 個物品，但通量熔煉爐和磨粉機需要更長的時間才能處理 1 個物品。因此，對自動化所需的每種原礦（銅，鐵，鋁），你很可能需要各有一台磨粉機和通量熔煉爐。記得將不需要的副產物清除，像是爐渣，否則它們很可能讓機器停止運作。可使用堆疊限制模組來限制機器能接受的物品數量，這很有用，因為你不希望一台磨粉機塞滿了 64 個鐵原礦就耗盡了你所有的 EMC。"]
+			dependencies: ["7A0CB1037E6BE4D7"]
+			optional: true
+			id: "09BAD2F7D01D16FD"
+			tasks: [{
+				id: "1366549E16545D0A"
+				type: "checkmark"
+				title: "自動化的小提示"
+			}]
+			rewards: [{
+				id: "0F2165D0F13CC47C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			description: ["把銅和鎳磨粉後合成康銅粉，然後燒成錠。"]
+			dependencies: ["19499868D936A165"]
+			id: "6039A6C800474F6D"
+			tasks: [{
+				id: "7A5298D1E8EFA6E5"
+				type: "item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						value: "forge:dusts/constantan"
+						display: {
+							Name: "{\"文字\"：\"任一種康銅粉\"}"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "773AD79BFE07336A"
+				type: "item"
+				item: "thermal:constantan_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			description: ["在還沒取得感應爐前要如何取得不變鋼？很簡單，把鐵和鎳磨成粉後，合成不變鋼粉，然後把它燒成錠。"]
+			dependencies: ["19A22A30A2BFEDAB"]
+			id: "547050DB11C5FFB7"
+			tasks: [{
+				id: "4E6DA9CBF61B6DB1"
+				type: "item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						value: "forge:dusts/invar"
+						display: {
+							Name: "{\"文字\"：\"任一種不變鋼粉\"}"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "62CCD410368BEF61"
+				type: "item"
+				item: "thermal:invar_ingot"
+				count: 4
+			}]
+		}
+	]
+	quest_links: [ ]
+}
