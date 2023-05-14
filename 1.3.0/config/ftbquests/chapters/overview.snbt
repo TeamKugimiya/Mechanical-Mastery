@@ -1,0 +1,101 @@
+{
+	id: "77FF66ED47CBD889"
+	group: ""
+	order_index: 0
+	filename: "overview"
+	title: "總覽"
+	icon: "minecraft:totem_of_undying"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: 0.5d
+			subtitle: "介紹與說明"
+			description: ["\"機械大師\"是個專家向但不會太可怕且過農的空島模組包，專注於將所有事情自動化才能繼續往下發展。EMC 全部都被調整過，而新增的\"機械精華\"能從各種原礦處理後製作而成，這些機械精華有不同的等級，越複雜製成的會給你成倍的 EMC。為了通關這個模組包，你必須學習如何把這些機械精華自動化生產，盡力取得更多的 EMC，祝你好運！"]
+			id: "0A440BFFAD3F083E"
+			tasks: [{
+				id: "3BB2FA8389857375"
+				type: "checkmark"
+				title: "歡迎！"
+			}]
+		}
+		{
+			icon: "thermal:machine_frame"
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["0A440BFFAD3F083E"]
+			id: "6F0F8C3F6B5E2310"
+			tasks: [{
+				id: "2C584B6EE7B58636"
+				type: "checkmark"
+				title: "第 1 階：熱力"
+			}]
+		}
+		{
+			icon: "create:crushing_wheel"
+			x: -2.0d
+			y: 0.5d
+			shape: "square"
+			dependencies: [
+				"6F0F8C3F6B5E2310"
+				"7A0CB1037E6BE4D7"
+			]
+			id: "2A9795581CE1CACF"
+			tasks: [{
+				id: "3BCA0B433ED08A4D"
+				type: "checkmark"
+				title: "第 2 階：動力機械與沉浸工程"
+			}]
+		}
+		{
+			icon: "mekanism:basic_control_circuit"
+			x: -0.5d
+			y: 0.5d
+			shape: "pentagon"
+			dependencies: [
+				"78775CE81571FAC9"
+				"2A9795581CE1CACF"
+			]
+			id: "636712D15DD7E2E8"
+			tasks: [{
+				id: "71B39DED89D5A45C"
+				type: "checkmark"
+				title: "第 3 階：基礎通用機械"
+			}]
+		}
+		{
+			icon: "mekanism:elite_control_circuit"
+			x: 1.0d
+			y: 0.5d
+			shape: "hexagon"
+			dependencies: [
+				"636712D15DD7E2E8"
+				"1A67C9B9ABB4E969"
+			]
+			id: "7B8B9AE6979535D8"
+			tasks: [{
+				id: "15A723F6047E80F3"
+				type: "checkmark"
+				title: "第 4 階：進階通用機械"
+			}]
+		}
+		{
+			title: "第 5 階：遊戲終章"
+			icon: "projectexpansion:final_star"
+			x: 2.5d
+			y: 0.5d
+			shape: "gear"
+			dependencies: [
+				"7B8B9AE6979535D8"
+				"157D4C0E9C7A0928"
+			]
+			id: "72E0FB7ABA0FF258"
+			tasks: [{
+				id: "3DA63D196473D774"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

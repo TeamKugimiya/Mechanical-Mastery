@@ -1,0 +1,982 @@
+{
+	id: "680AAFF5D8F57095"
+	group: ""
+	order_index: 5
+	filename: "tier_3"
+	title: "第 3 階：基礎通用機械"
+	icon: "kubejs:cube3"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "kubejs:cube2"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "仍需更多力量..."
+			description: ["你打算製作改良版本的機械精華，但你認為應該可以做得更好，你就快要懂了。"]
+			dependencies: ["78775CE81571FAC9"]
+			id: "550E4D68A98180F5"
+			tasks: [{
+				id: "63BAB42990FDBE64"
+				type: "checkmark"
+				title: "第 3 階的材料"
+			}]
+		}
+		{
+			icon: "minecraft:glowstone_dust"
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["550E4D68A98180F5"]
+			id: "4E61E769ACDF5200"
+			tasks: [{
+				id: "6548F34E58083DCA"
+				type: "checkmark"
+				title: "螢石粉"
+			}]
+			rewards: [{
+				id: "449541452E0AE404"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["4E61E769ACDF5200"]
+			id: "597011E2824EC464"
+			tasks: [{
+				id: "24FC94D07F8B4E0C"
+				type: "item"
+				item: {
+					id: "projecte:philosophers_stone"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "5902B7E422223948"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["用鐵轉換成終界珍珠。"]
+			dependencies: ["597011E2824EC464"]
+			id: "5C667632EEBBC370"
+			tasks: [{
+				id: "25CF896DE55A409A"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+			rewards: [{
+				id: "54E16351B3BEB335"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "用雕像召喚"
+			icon: "kubejs:dormant_effigy"
+			x: -3.0d
+			y: 0.0d
+			subtitle: "這個模組包中最\"魔法\"的事情"
+			description: ["本模組包中，可以製作特殊的\"雕像\"，當丟出時立即召喚它們對應的實體。這能以手動右鍵該物品或用點擊器自動化。雖然它們需要注入特定的流體才能將潛能完全覺醒。"]
+			dependencies: ["550E4D68A98180F5"]
+			id: "1B6E93FE3C6D5966"
+			tasks: [{
+				id: "1153105AEF332E96"
+				type: "item"
+				item: "kubejs:dormant_effigy"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			description: ["可在熔岩爐中用鵝卵石或地獄石製作岩漿。"]
+			dependencies: ["1B6E93FE3C6D5966"]
+			id: "0936B0DE389AE023"
+			tasks: [{
+				id: "12001DE24F6A53D6"
+				type: "item"
+				item: "kubejs:blaze_effigy"
+			}]
+			rewards: [{
+				id: "523AAAFF752165D2"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			dependencies: ["1B6E93FE3C6D5966"]
+			id: "1726AEFF59B7051C"
+			tasks: [{
+				id: "68769268F26AAABD"
+				type: "item"
+				item: "kubejs:blizz_effigy"
+			}]
+			rewards: [{
+				id: "2B43E487682AD397"
+				type: "item"
+				item: "thermal:blizz_rod"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			dependencies: ["1B6E93FE3C6D5966"]
+			id: "26BC4F630EFDF4FE"
+			tasks: [{
+				id: "236CEF3BE6D8DF0C"
+				type: "item"
+				item: "kubejs:blitz_effigy"
+			}]
+			rewards: [{
+				id: "49129F8D536C550F"
+				type: "item"
+				item: "thermal:blitz_rod"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			dependencies: ["1B6E93FE3C6D5966"]
+			id: "4067313DEFDFF97F"
+			tasks: [{
+				id: "6B5455EF12B63C5E"
+				type: "item"
+				item: "kubejs:basalz_effigy"
+			}]
+			rewards: [{
+				id: "6FE9188B030270D8"
+				type: "item"
+				item: "thermal:basalz_rod"
+			}]
+		}
+		{
+			icon: "mekanism:ingot_osmium"
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["550E4D68A98180F5"]
+			id: "5CA4D72E0119A49E"
+			tasks: [{
+				id: "2B0EA6FE325CF7F5"
+				type: "checkmark"
+				title: "鋨"
+			}]
+			rewards: [{
+				id: "2CBA6EDF83740FB4"
+				type: "item"
+				item: "mekanism:raw_osmium"
+			}]
+		}
+		{
+			icon: "thermal:apatite"
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["550E4D68A98180F5"]
+			id: "1CC0266CBBF64519"
+			tasks: [{
+				id: "64EDC0FF782046FA"
+				type: "checkmark"
+				title: "磷灰石"
+			}]
+			rewards: [{
+				id: "01618F127768E2B5"
+				type: "item"
+				item: "thermal:apatite_ore"
+			}]
+		}
+		{
+			title: "雕像自動化"
+			x: -3.5d
+			y: 2.0d
+			shape: "gear"
+			description: ["把點擊器面向牆放置來啟動雕像。它不需要電，所以點擊器可以隨你調整速度。真空箱子可以簡單的撿取它們的掉落物，而 RF 工具的計時器可以持續啟動投擲器。這只是其中一種方法，若你有其他想法來自動化，隨時歡迎。"]
+			dependencies: ["1B6E93FE3C6D5966"]
+			optional: true
+			id: "0A7E1E8B5F04A64F"
+			tasks: [
+				{
+					id: "6D847F1FD7A72A39"
+					type: "item"
+					item: "miniutilities:iron_spikes"
+				}
+				{
+					id: "4D69EA4B2B78C6B9"
+					type: "item"
+					item: "thermal:device_collector"
+				}
+				{
+					id: "45A986D84D1BCD93"
+					type: "item"
+					item: "clickmachine:auto_clicker"
+				}
+			]
+			rewards: [{
+				id: "44938649FE3E592B"
+				type: "item"
+				item: "kubejs:cube2_packaged"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			description: ["混合木炭，硝酸鹽粉和硫磺取得火藥。"]
+			dependencies: ["3BBD496B7BFF1015"]
+			id: "71D0B9CED0AE20D0"
+			tasks: [{
+				id: "1629FF3423BC6D49"
+				type: "item"
+				item: "minecraft:gunpowder"
+			}]
+			rewards: [
+				{
+					id: "1535354F98FE085D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "467902C62D9F96A4"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "元素彈"
+			x: -6.5d
+			y: 0.0d
+			dependencies: [
+				"0936B0DE389AE023"
+				"1726AEFF59B7051C"
+				"26BC4F630EFDF4FE"
+				"4067313DEFDFF97F"
+			]
+			id: "52CFEB2AD82AB105"
+			tasks: [
+				{
+					id: "437C11AD2BCD80EE"
+					type: "item"
+					item: "minecraft:fire_charge"
+				}
+				{
+					id: "4ED38FD174BF16CE"
+					type: "item"
+					item: "thermal:earth_charge"
+				}
+				{
+					id: "0E5B1D3BCDA80953"
+					type: "item"
+					item: "thermal:ice_charge"
+				}
+				{
+					id: "7C369FE7D6130C16"
+					type: "item"
+					item: "thermal:lightning_charge"
+				}
+			]
+			rewards: [
+				{
+					id: "6456832DE65C3237"
+					type: "item"
+					item: "minecraft:fire_charge"
+				}
+				{
+					id: "2D56740B2DF26B42"
+					type: "item"
+					item: "thermal:earth_charge"
+				}
+				{
+					id: "56A9FE503D677DFE"
+					type: "item"
+					item: "thermal:ice_charge"
+				}
+				{
+					id: "47E193FCF01F335C"
+					type: "item"
+					item: "thermal:lightning_charge"
+				}
+			]
+		}
+		{
+			title: "開始通用機械"
+			icon: "mekanism:alloy_reinforced"
+			x: 4.5d
+			y: 0.0d
+			subtitle: "通用機械的介紹"
+			description: ["通用機械是個強大的科技模組，增加了各種等級的機器幫你大量生產旅程中所需的各種材料。"]
+			dependencies: ["5CA4D72E0119A49E"]
+			id: "71C9474E4BD142E3"
+			tasks: [{
+				id: "0BC5CC1A3DD308D8"
+				type: "checkmark"
+				title: "通用機械的介紹"
+			}]
+			rewards: [{
+				id: "6EBCF5C55A0138D0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "mekanism:alloy_atomic"
+			x: 4.5d
+			y: 1.5d
+			description: ["通用機械有自己的發電機，生產大量的 RF，然而一些最強大的現在還做不出來。"]
+			dependencies: ["71C9474E4BD142E3"]
+			id: "6BC0E03B21A767EA"
+			tasks: [{
+				id: "27357EA3ACEE19AB"
+				type: "checkmark"
+				title: "通用機械的發電機"
+			}]
+		}
+		{
+			icon: "thermal:diamond_gear"
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["550E4D68A98180F5"]
+			id: "23154671E321BFAE"
+			tasks: [{
+				id: "3631FED0EBE81788"
+				type: "checkmark"
+				title: "擴展熱力"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			description: ["進一步增強機器的基礎數值。"]
+			dependencies: ["23154671E321BFAE"]
+			id: "07B8B18695DBBD1B"
+			tasks: [{
+				id: "60EFB8C4512584A4"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+			rewards: [{
+				id: "7951CC84F17A0124"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: ["通用機械中最基本的機器。有了它，你能製作越來越強大的合金和電路，以製作更高級的機器。"]
+			dependencies: ["71C9474E4BD142E3"]
+			id: "1A983E23E641CA16"
+			tasks: [{
+				id: "556CA1EB382FD7EA"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			dependencies: ["1A983E23E641CA16"]
+			id: "64F073734D1826C5"
+			tasks: [{
+				id: "4A87BC6A2667AB78"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			description: ["充能冶煉爐能消耗 RF 快速燒製物品，且可升級來同時燒製多個物品。"]
+			dependencies: ["64F073734D1826C5"]
+			id: "3E46FBB08203CFFC"
+			tasks: [{
+				id: "4EDEADCA66981F6C"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+			rewards: [{
+				id: "03190CD048189AFC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "通用機械的機器等級"
+			x: 8.5d
+			y: 1.0d
+			description: ["許多通用機械的機器可以用各種等級的安裝器升級，這能增加同時處理物品的數量，總體來說讓產量更快速。然而還是有些機器不能升級。"]
+			dependencies: ["64F073734D1826C5"]
+			id: "459286FB757CF09E"
+			tasks: [{
+				id: "694FD689B92AA0C2"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+		}
+		{
+			title: "通用機械的機器升級"
+			x: 8.5d
+			y: 0.0d
+			description: ["通用機械的機器中能安裝至多 8 個速度或能量升級，分別能增加處理速度和能量效率。有些機器可以安裝至多 8 個氣體升級，這能讓減少氣體消耗。"]
+			dependencies: ["64F073734D1826C5"]
+			id: "543452935C91E989"
+			tasks: [{
+				id: "6B49CF6900FE6740"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:upgrade_energy"
+								Count: 1b
+							}
+							{
+								id: "mekanism:upgrade_speed"
+								Count: 1b
+							}
+							{
+								id: "mekanism:upgrade_gas"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "273CF1C888B4640F"
+					type: "item"
+					item: "mekanism:upgrade_speed"
+					count: 8
+				}
+				{
+					id: "1FE83D441A940124"
+					type: "item"
+					item: "mekanism:upgrade_energy"
+					count: 8
+				}
+				{
+					id: "7F1AD60BB7FD6799"
+					type: "item"
+					item: "mekanism:upgrade_gas"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "被動的發電機"
+			x: 4.5d
+			y: 3.0d
+			description: ["這些通用機械的發電機能讓你被動生產 RF 且無須消耗任何材料。然而它們的發電量通常不穩定且你也許需要用能量儲存器來調整它。在物品上方按住 Shift + N 來查看基本的敘述。"]
+			dependencies: ["6BC0E03B21A767EA"]
+			optional: true
+			id: "725C03AFA45FEE68"
+			tasks: [{
+				id: "563C7EEDCF04E1DF"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanismgenerators:advanced_solar_generator"
+								Count: 1b
+							}
+							{
+								id: "mekanismgenerators:solar_generator"
+								Count: 1b
+							}
+							{
+								id: "mekanismgenerators:wind_generator"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5E9EAB7CBABC5C40"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "主動的發電機"
+			x: 6.0d
+			y: 2.5d
+			description: ["這些發電機消耗物品或流體產生 RF，優點是發電量大且穩定。在物品上方按住 Shift + N 來查看基本的敘述。"]
+			dependencies: ["6BC0E03B21A767EA"]
+			optional: true
+			id: "0284F10C4BF84652"
+			tasks: [{
+				id: "6B3444E34F8BEA58"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanismgenerators:heat_generator"
+								Count: 1b
+							}
+							{
+								id: "mekanismgenerators:bio_generator"
+								Count: 1b
+							}
+							{
+								id: "mekanismgenerators:gas_burning_generator"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "4E6CD6FC00807DE5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.0d
+			shape: "gear"
+			description: ["結合元素之力和機械之力，你打算更進一步改善機械精華，使它更強大且有更多的 EMC。"]
+			dependencies: ["3F58AD4EAE336B1E"]
+			id: "1A67C9B9ABB4E969"
+			tasks: [
+				{
+					id: "7C9B3A9DC8EC9311"
+					type: "item"
+					item: "kubejs:cube3"
+				}
+				{
+					id: "72C60D5DB41BB470"
+					type: "item"
+					item: "kubejs:cube3_packaged"
+				}
+			]
+			rewards: [
+				{
+					id: "7593102392587CD6"
+					type: "item"
+					item: "kubejs:cube3_packaged"
+				}
+				{
+					id: "42B111B959E9854B"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "精緻儲存！"
+			x: -6.5d
+			y: -5.0d
+			shape: "heart"
+			subtitle: "我心愛的"
+			description: ["終於，一個好的儲存解決方案！"]
+			dependencies: ["1A67C9B9ABB4E969"]
+			optional: true
+			id: "167B6648066F358B"
+			tasks: [{
+				id: "1E5BC3B3084F5543"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+			rewards: [
+				{
+					id: "6DB2EB02CC46D76E"
+					type: "item"
+					item: "refinedstorage:cable"
+					count: 16
+				}
+				{
+					id: "26B3C25AA39B1B57"
+					type: "item"
+					item: "refinedstorage:storage_housing"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "通用機械的高級管道"
+			x: 7.0d
+			y: 1.5d
+			description: ["你能升級通用機械中的各種管道，提供輸出輸入量。"]
+			dependencies: ["1A983E23E641CA16"]
+			id: "3D8A15299F1A5FD8"
+			tasks: [{
+				id: "7DF6E6F76F9C0321"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:advanced_universal_cable"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_mechanical_pipe"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_logistical_transporter"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "54DBF413663B1ECD"
+				type: "choice"
+				table_id: 2913086607439367085L
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			shape: "gear"
+			description: ["熱力的最高階整合組件。"]
+			dependencies: ["07B8B18695DBBD1B"]
+			id: "63F60669596D10F2"
+			tasks: [{
+				id: "656E0F048CF98250"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+			rewards: [{
+				id: "0D251ADC21E3485C"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+		}
+		{
+			title: "生產硫磺和硝酸鹽"
+			icon: "mekanism:dust_sulfur"
+			x: 1.0d
+			y: 1.0d
+			description: ["硫磺和硝酸鹽都不能從 EMC 取得，只能人工製造。硝酸鹽可由粉碎砂岩取得，而硝酸鹽在加壓反應室中用氧氣和煤炭（木炭）製成。"]
+			dependencies: ["550E4D68A98180F5"]
+			id: "3BBD496B7BFF1015"
+			tasks: [
+				{
+					id: "67B3381968BC1841"
+					type: "item"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							value: "forge:dusts/sulfur"
+							display: {
+								Name: "{\"文字\"：\"任一種硫磺粉\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "1793212299008062"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "immersiveengineering:dust_saltpeter"
+									Count: 1b
+								}
+								{
+									id: "thermal:niter_dust"
+									Count: 1b
+								}
+							]
+							display: {
+								Name: "{\"文字\"：\"硝石/硝酸鹽粉\"}"
+							}
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "29A24639FADF2850"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "730CD7BE6842B3C3"
+					type: "item"
+					item: "immersiveengineering:dust_saltpeter"
+					count: 16
+				}
+				{
+					id: "5F5828BB21988E7B"
+					type: "item"
+					item: "mekanism:dust_sulfur"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "烈焰使者動力爐"
+			x: -6.5d
+			y: -1.5d
+			description: ["合成空的烈焰使者動力爐然後對烈焰使者右鍵取得烈焰使者動力爐。烈焰使者動力爐需放在作業盆的下方，且可提供燃料加熱，某些製作配方會需要。"]
+			dependencies: [
+				"52CFEB2AD82AB105"
+				"0936B0DE389AE023"
+			]
+			id: "3F58AD4EAE336B1E"
+			tasks: [
+				{
+					id: "18FBE000A5EAEF5F"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "32EBFDECB1D9CAD5"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+			rewards: [{
+				id: "1CADA153CF75D7DC"
+				type: "item"
+				item: "minecraft:coal"
+				count: 16
+			}]
+		}
+		{
+			title: "安全路線"
+			x: -2.5d
+			y: 2.0d
+			shape: "gear"
+			description: ["無論你是因為和平模式或只是不想傷及無辜，鋸木機可從雕像中直接提取出材料，而不會生成生物，只是效率會差一些。"]
+			dependencies: ["1B6E93FE3C6D5966"]
+			optional: true
+			id: "26BD8CE4BDC37C65"
+			tasks: [{
+				id: "2942D6B4EFE510EA"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+		}
+		{
+			icon: "powah:uraninite"
+			x: -1.0d
+			y: -1.0d
+			description: ["對波瓦科技的反應爐很有用。"]
+			dependencies: ["550E4D68A98180F5"]
+			id: "2E9BDE619EF1CF9E"
+			tasks: [{
+				id: "499301BEE329EA0B"
+				type: "checkmark"
+				title: "晶質鈾燃料"
+			}]
+			rewards: [{
+				id: "46ED114C6A65AA0D"
+				type: "item"
+				item: "powah:uraninite"
+				count: 8
+			}]
+		}
+		{
+			title: "通量與通量方塊"
+			icon: "fluxnetworks:flux_dust"
+			x: 0.0d
+			y: 1.5d
+			description: ["用這種昂貴的方式做出第一個通量方塊後，可改用另一個更有效率的方式取得通量粉。將紅石粉丟在通量方塊上，在它上方的位置放上黑曜石，然後空手左鍵。只有黑曜石會被消耗。"]
+			dependencies: ["550E4D68A98180F5"]
+			id: "65CCE43B4B2AEC6F"
+			tasks: [{
+				id: "264D55BB9949E0D6"
+				type: "item"
+				item: "fluxnetworks:flux_block"
+			}]
+			rewards: [{
+				id: "219FAD265DF75B3B"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+				count: 16
+			}]
+		}
+		{
+			title: "通量網路"
+			x: 0.0d
+			y: 3.0d
+			description: ["簡單強大的 RF 傳輸模組，通量網路能讓你從輸入端（通量網路輸入點）至輸出端（通量網路存取點）間無線傳輸 RF，且沒有傳輸上限。"]
+			dependencies: ["65CCE43B4B2AEC6F"]
+			id: "5328C8928A16E3CB"
+			tasks: [
+				{
+					id: "2E12FB4D8D2EAAD0"
+					type: "item"
+					item: "fluxnetworks:flux_plug"
+				}
+				{
+					id: "3E52C674A60D7304"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+				}
+			]
+			rewards: [{
+				id: "1A9000D39CDD5CFF"
+				type: "item"
+				item: "fluxnetworks:flux_controller"
+			}]
+		}
+		{
+			title: "建築材料：更多種原木"
+			x: 1.5d
+			y: -3.0d
+			shape: "diamond"
+			description: ["使用賢者之石將橡木原木轉換成其他種類的原木，依你所想的方式來裝飾你的基地。"]
+			dependencies: ["597011E2824EC464"]
+			optional: true
+			id: "6E8F9BEE7C543449"
+			tasks: [{
+				id: "775CD28183F5B9F3"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						items: [
+							{
+								id: "minecraft:dark_oak_log"
+								Count: 1b
+							}
+							{
+								id: "minecraft:acacia_log"
+								Count: 1b
+							}
+							{
+								id: "minecraft:jungle_log"
+								Count: 1b
+							}
+							{
+								id: "minecraft:birch_log"
+								Count: 1b
+							}
+							{
+								id: "minecraft:spruce_log"
+								Count: 1b
+							}
+						]
+						display: {
+							Name: "{\"text\":\"Other Logs\"}"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "03A38344953175E6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "建築材料：深板岩"
+			x: -4.0d
+			y: -2.5d
+			shape: "diamond"
+			description: ["沒有實際的用途，但是個不錯的建材。"]
+			dependencies: ["1726AEFF59B7051C"]
+			optional: true
+			id: "0C2B0B4B953B7912"
+			tasks: [{
+				id: "3F09C31B37DF82A6"
+				type: "item"
+				item: "minecraft:cobbled_deepslate"
+			}]
+			rewards: [{
+				id: "073370A7A3846888"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "建築材料：地獄原木"
+			x: 1.5d
+			y: -4.0d
+			shape: "diamond"
+			description: ["這個有一點複雜：用堆肥和爐渣合成或在冶金灌注機中製作灰壤，然後使用磨粉機取得蘑菇。批次喚魂取得地獄種類的蘑菇，放在對應菌絲石上用骨粉催生成對應的地獄樹木。菌絲石可使用賢者之石轉換而成。"]
+			dependencies: ["597011E2824EC464"]
+			optional: true
+			id: "1D326E02F860A929"
+			tasks: [
+				{
+					id: "6A45A95FD46A1E46"
+					type: "item"
+					item: "minecraft:crimson_fungus"
+				}
+				{
+					id: "55B2574448B77664"
+					type: "item"
+					item: "minecraft:warped_fungus"
+				}
+				{
+					id: "2C2C33E232BB2611"
+					type: "item"
+					item: "minecraft:crimson_nylium"
+				}
+				{
+					id: "0C8C220550314E2F"
+					type: "item"
+					item: "minecraft:warped_nylium"
+				}
+				{
+					id: "27ACE610FDC0CC23"
+					type: "item"
+					item: "minecraft:crimson_stem"
+				}
+				{
+					id: "0158948C4AA9749F"
+					type: "item"
+					item: "minecraft:warped_stem"
+				}
+				{
+					id: "796AFDADEACD76C2"
+					type: "item"
+					item: "minecraft:brown_mushroom"
+				}
+				{
+					id: "6564FAC14E0AE9DF"
+					type: "item"
+					item: "minecraft:red_mushroom"
+				}
+				{
+					id: "15C6725939B928D1"
+					type: "item"
+					item: "minecraft:podzol"
+				}
+			]
+			rewards: [{
+				id: "46EF84C5E7415053"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

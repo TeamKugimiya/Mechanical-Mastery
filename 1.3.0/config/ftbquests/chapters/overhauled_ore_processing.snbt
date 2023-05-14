@@ -1,0 +1,360 @@
+{
+	id: "44EDDD35E8CC68F2"
+	group: ""
+	order_index: 2
+	filename: "overhauled_ore_processing"
+	title: "礦物產線全面調整"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "礦物產線全面調整"
+			x: 0.0d
+			y: 2.0d
+			shape: "square"
+			description: ["這個模組包提供了相當強大的方法來將礦物處理後倍增，從兩倍化到最多 25 倍化。雖然不是絕對必要，但對你而言特別有用，因為這能讓以更低成本的 EMC 花費中取得更多的材料。請注意，任務顯示的機器不一定是整個過程需要的所有機器。"]
+			optional: true
+			id: "0A6DCD0DA11C6642"
+			tasks: [{
+				id: "739F6F2F289363EC"
+				type: "item"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots"
+					}
+				}
+			}]
+		}
+		{
+			title: "熱力磨粉機"
+			x: 1.5d
+			y: 2.0d
+			subtitle: "x1.2"
+			dependencies: ["0A6DCD0DA11C6642"]
+			id: "53FE9CDC8A72CA5C"
+			tasks: [
+				{
+					id: "75F441893A3E5830"
+					type: "item"
+					title: "Any #forge:dusts"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:dusts"
+						}
+					}
+				}
+				{
+					id: "48E02F0D9429DB0E"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "thermal:machine_pulverizer"
+									Count: 1b
+								}
+								{
+									id: "mekanism:enrichment_chamber"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5A38A316648103DD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "動力機械粉碎輪"
+			x: 6.0d
+			y: 2.0d
+			subtitle: "x1.3"
+			dependencies: ["2DD85B456F8E35B6"]
+			id: "3F5B3402F07BFDB3"
+			tasks: [
+				{
+					id: "7BEE3152FF17255C"
+					type: "item"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "create:crushed_ores"
+						}
+					}
+				}
+				{
+					id: "39FAEE2A6DFDC326"
+					type: "item"
+					item: "create:crushing_wheel"
+				}
+			]
+		}
+		{
+			title: "進化倉"
+			x: 9.0d
+			y: 2.0d
+			subtitle: "x2*"
+			description: ["Note: "]
+			dependencies: ["3C29B9915BC52C91"]
+			id: "5B3E3AFD70AA55DA"
+			tasks: [
+				{
+					id: "767AA6269C6DD815"
+					type: "item"
+					item: "mekanism:purification_chamber"
+				}
+				{
+					id: "2C34B6177F52C9C6"
+					type: "item"
+					title: "Any #mekanism:clumps"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "mekanism:clumps"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "10E09E3B3F5B1ED2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "化學壓射室"
+			x: 10.5d
+			y: 2.0d
+			subtitle: "x2.66*"
+			dependencies: ["5B3E3AFD70AA55DA"]
+			id: "3654F4DD1B835750"
+			tasks: [
+				{
+					id: "0CF270F3EDFEAB69"
+					type: "item"
+					item: "mekanism:chemical_injection_chamber"
+				}
+				{
+					id: "23B37A20D7A70503"
+					type: "item"
+					title: "Any #mekanism:shards"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "mekanism:shards"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1FCB7BE293D0BB79"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "化學溶解室"
+			x: 12.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "x3.33*"
+			description: ["最有效率的礦物處理... 對現在而言。"]
+			dependencies: ["3654F4DD1B835750"]
+			id: "45522B13D9D5FE22"
+			tasks: [
+				{
+					id: "36BB2F485CAEF2E7"
+					type: "item"
+					item: "mekanism:chemical_dissolution_chamber"
+				}
+				{
+					id: "0E772D8DB9CE06AA"
+					type: "item"
+					title: "Any #mekanism:crystals"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "mekanism:crystals"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "4E5CABCCAEC1CB08"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "27289410C2DB107A"
+					type: "item"
+					item: "kubejs:cube3_packaged"
+				}
+			]
+		}
+		{
+			title: "磨粉機催化劑：燧石"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "x1.1"
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "69334BC3FEC45E88"
+			tasks: [{
+				id: "1F43661FC880E703"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+		}
+		{
+			title: "磨粉機催化劑：岩石粉"
+			x: 3.0d
+			y: 1.0d
+			subtitle: "x1.25"
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "07194DDB411AFDBE"
+			tasks: [{
+				id: "0D1893079FFC92FB"
+				type: "item"
+				item: "thermal:basalz_powder"
+			}]
+		}
+		{
+			title: "磨粉機催化劑：裂岩彈"
+			x: 3.0d
+			y: 2.0d
+			subtitle: "x1.5"
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "71015BE55E0EF504"
+			tasks: [{
+				id: "11DB810DB86E7503"
+				type: "item"
+				item: "thermal:earth_charge"
+			}]
+		}
+		{
+			title: "磨粉機催化劑：基礎試劑"
+			x: 3.0d
+			y: 3.0d
+			subtitle: "x2.0"
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "7986E28D02F23868"
+			tasks: [{
+				id: "7A9FD278EE78EBF4"
+				type: "item"
+				item: "kubejs:basilic_reagent"
+			}]
+		}
+		{
+			title: "磨粉機催化劑：富集基礎試劑"
+			x: 3.0d
+			y: 4.0d
+			subtitle: "x2.5"
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "2AAD31BA89F48BFC"
+			tasks: [{
+				id: "06957F501491A80E"
+				type: "item"
+				item: "kubejs:enriched_basilic_reagent"
+			}]
+		}
+		{
+			title: "通用機械粉碎機"
+			x: 4.5d
+			y: 2.0d
+			subtitle: "x2"
+			dependencies: [
+				"69334BC3FEC45E88"
+				"07194DDB411AFDBE"
+				"71015BE55E0EF504"
+				"7986E28D02F23868"
+				"2AAD31BA89F48BFC"
+			]
+			id: "2DD85B456F8E35B6"
+			tasks: [
+				{
+					id: "7712E5F7B00ABA10"
+					type: "item"
+					item: "mekanism:crusher"
+				}
+				{
+					id: "0DC061D2707F7E16"
+					type: "item"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "mekanism:dirty_dusts"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 2.0d
+			subtitle: "x?"
+			description: ["進化倉，化學壓射室和化學結晶器的倍率值*僅*適用當你從這台機器開始處理礦物。基本上，你無法將這些倍率相乘，儘管你可以這些步驟前這樣做。"]
+			dependencies: ["3F5B3402F07BFDB3"]
+			id: "3C29B9915BC52C91"
+			tasks: [{
+				id: "1D06A2C2AF9DECA4"
+				type: "checkmark"
+				title: "往下走前先看過這個"
+			}]
+		}
+		{
+			title: "輸入：硫酸"
+			x: 12.0d
+			y: 3.5d
+			dependencies: ["45522B13D9D5FE22"]
+			optional: true
+			id: "7EFF27C03DDC04BF"
+			tasks: [{
+				id: "279A41E7CD1A5597"
+				type: "item"
+				item: "mekanism:sulfuric_acid_bucket"
+			}]
+		}
+		{
+			title: "輸入：氯化氫"
+			x: 10.5d
+			y: 3.5d
+			dependencies: ["3654F4DD1B835750"]
+			optional: true
+			id: "26407132F7520320"
+			tasks: [{
+				id: "7D5B8F2E36930AF6"
+				type: "item"
+				item: "mekanism:hydrogen_chloride_bucket"
+			}]
+		}
+		{
+			title: "輸入：氧氣"
+			x: 9.0d
+			y: 3.5d
+			dependencies: ["5B3E3AFD70AA55DA"]
+			optional: true
+			id: "2EB50A85B6F4D37D"
+			tasks: [{
+				id: "655517B5352AB9A6"
+				type: "item"
+				item: "mekanism:oxygen_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
