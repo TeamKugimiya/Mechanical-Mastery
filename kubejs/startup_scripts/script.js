@@ -125,8 +125,11 @@ onEvent('item.registry', event => {
 	event.create('incomplete_time_augment').displayName('時間不穩定器元件').texture('kubejs:item/basic_package');
 	event.create('time_augment').displayName('局部時間不穩定器').tooltip('使機器與時間洪流懷錶相容。最好與諧振整合元件一起使用')
 
+	
 	event.create('incomplete_creative_blaze_cake').displayName('未完成的創造模式烈焰蛋糕');
 	event.create('incomplete_creative_upgrade').displayName('未完成的創造模式增強元件');
+
+	event.create('coated_redstone').displayName('塗上黑曜石的紅石');
 
 	// industrial foregoing items
 	event.create('incomplete_simple_frame').displayName('未完成的中級機械框架').texture('kubejs:item/basic_package');
