@@ -38,7 +38,7 @@
 				{
 					id: "75F441893A3E5830"
 					type: "item"
-					title: "Any #forge:dusts"
+					title: "任何 #forge:dusts"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -83,20 +83,20 @@
 			id: "3F5B3402F07BFDB3"
 			tasks: [
 				{
-					id: "7BEE3152FF17255C"
+					id: "39FAEE2A6DFDC326"
+					type: "item"
+					item: "create:crushing_wheel"
+				}
+				{
+					id: "197BCDF580A92D4F"
 					type: "item"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
 						tag: {
-							value: "create:crushed_ores"
+							value: "create:crushed_raw_materials"
 						}
 					}
-				}
-				{
-					id: "39FAEE2A6DFDC326"
-					type: "item"
-					item: "create:crushing_wheel"
 				}
 			]
 		}
@@ -117,7 +117,7 @@
 				{
 					id: "2C34B6177F52C9C6"
 					type: "item"
-					title: "Any #mekanism:clumps"
+					title: "任何 #mekanism:clumps"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -149,7 +149,7 @@
 				{
 					id: "23B37A20D7A70503"
 					type: "item"
-					title: "Any #mekanism:shards"
+					title: "任何 #mekanism:shards"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -183,7 +183,7 @@
 				{
 					id: "0E772D8DB9CE06AA"
 					type: "item"
-					title: "Any #mekanism:crystals"
+					title: "任何 #mekanism:crystals"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b

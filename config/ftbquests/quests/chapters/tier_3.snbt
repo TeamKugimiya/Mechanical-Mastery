@@ -584,8 +584,8 @@
 		}
 		{
 			title: "精緻儲存！"
-			x: -6.5d
-			y: -5.0d
+			x: -5.5d
+			y: -3.5d
 			shape: "heart"
 			subtitle: "我心愛的"
 			description: ["終於，一個好的儲存解決方案！"]
@@ -672,7 +672,7 @@
 			icon: "mekanism:dust_sulfur"
 			x: 1.0d
 			y: 1.0d
-			description: ["硫磺和硝酸鹽都不能從 EMC 取得，只能\n人工製造。硝酸鹽可由粉碎砂岩取得，而硝酸鹽在加壓反應室中用氧氣和煤炭（木炭）製成。"]
+			description: ["硫磺和硝酸鹽都不能從 EMC 取得，只能\n人工製造。硝酸鹽可由粉碎砂岩取得，而硫磺粉在加壓反應室中用氧氣和煤炭（木炭）製成。"]
 			dependencies: ["550E4D68A98180F5"]
 			id: "3BBD496B7BFF1015"
 			tasks: [
@@ -686,7 +686,7 @@
 							RepairCost: 0
 							value: "forge:dusts/sulfur"
 							display: {
-								Name: "{\"文字\"：\"任一種硫磺粉\"}"
+								Name: "{\"text\":\"任一種硫磺粉\"}"
 							}
 						}
 					}
@@ -710,7 +710,7 @@
 								}
 							]
 							display: {
-								Name: "{\"文字\"：\"硝石/硝酸鹽粉\"}"
+								Name: "{\"text\":\"硝石/硝酸鹽粉\"}"
 							}
 						}
 					}
@@ -884,7 +884,7 @@
 							}
 						]
 						display: {
-							Name: "{\"text\":\"Other Logs\"}"
+							Name: "{\"text\":\"其他原木\"}"
 						}
 					}
 				}
@@ -975,6 +975,454 @@
 				id: "46EF84C5E7415053"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			title: "AE2 路線"
+			x: -7.5d
+			y: -3.5d
+			shape: "heart"
+			subtitle: "我另一個心愛的"
+			description: ["若你傾向使用 AE2 而非 RS，以下是取得方式。\\n壓印模板有機械動力的序列組裝配方。\\n用 8 個拋光深板岩（使用造石機取得深板岩）和 1 個改良機械精華製作隕石方塊。你只需要\"一個\"。用動力機械的石磨或粉碎輪重複製作隕石粉（產物會還你一個隕石方塊）。最後批次洗滌隕石粉取得賽特斯石英，歡迎來到 AE2。"]
+			dependencies: ["1A67C9B9ABB4E969"]
+			optional: true
+			id: "182209ACB7DE7F78"
+			tasks: [
+				{
+					id: "4DB195C36AF91F07"
+					type: "item"
+					item: "ae2:sky_stone_block"
+				}
+				{
+					id: "7724ACE26190768B"
+					type: "item"
+					item: "ae2:sky_dust"
+				}
+				{
+					id: "4FC7537991F758B1"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+				}
+				{
+					id: "4388CA1EDF6E8AA2"
+					type: "item"
+					item: "ae2:charged_certus_quartz_crystal"
+				}
+				{
+					id: "0844A607CE3806B4"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "ae2:silicon_press"
+									Count: 1b
+								}
+								{
+									id: "ae2:logic_processor_press"
+									Count: 1b
+								}
+								{
+									id: "ae2:engineering_processor_press"
+									Count: 1b
+								}
+								{
+									id: "ae2:calculation_processor_press"
+									Count: 1b
+								}
+							]
+							display: {
+								Name: "{\"text\":\"任何壓印模板\"}"
+							}
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "09E14E179E2A0C14"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+					count: 16
+				}
+				{
+					id: "13945813F903F1E9"
+					type: "item"
+					item: "ae2:charged_certus_quartz_crystal"
+					count: 16
+				}
+				{
+					id: "00E6D25EB03C4F8E"
+					type: "choice"
+					icon: "ae2:silicon_press"
+					exclude_from_claim_all: true
+					table_id: 3863636129854262795L
+				}
+			]
+		}
+		{
+			title: "ME 起始套件"
+			x: -7.0d
+			y: -4.5d
+			description: ["有了這些物品，就能開始你的 ME 系統"]
+			dependencies: ["182209ACB7DE7F78"]
+			optional: true
+			id: "511A43E0281B8171"
+			tasks: [
+				{
+					id: "10A8B77859650451"
+					type: "item"
+					item: "ae2:controller"
+				}
+				{
+					id: "57D1FCAA1BF8131C"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "60F2ACB10074439D"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "ae2:terminal"
+									Count: 1b
+								}
+								{
+									id: "ae2:crafting_terminal"
+									Count: 1b
+								}
+							]
+							display: {
+								Name: "{\"text\":\"任何 ME 終端\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "3EC67BA769B3DCC1"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "ae2:item_storage_cell_1k"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "ae2:item_storage_cell_4k"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "ae2:item_storage_cell_16k"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "ae2:item_storage_cell_64k"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "ae2:item_storage_cell_256k"
+									Count: 1b
+									tag: { }
+								}
+							]
+							display: {
+								Name: "{\"text\":\"任何 ME 物品儲存元件\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "6301695AB309C3F6"
+					type: "item"
+					item: "ae2:inscriber"
+				}
+			]
+			rewards: [
+				{
+					id: "24FD9DC7C8CA34DC"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+					count: 64
+				}
+				{
+					id: "1A624BFC478D6992"
+					type: "item"
+					item: "ae2:charged_certus_quartz_crystal"
+					count: 32
+				}
+				{
+					id: "739F01D8C50A2685"
+					type: "item"
+					item: "ae2:quartz_glass"
+					count: 16
+				}
+				{
+					id: "76C0A0877ECE001A"
+					type: "item"
+					item: "ae2:logic_processor"
+					count: 8
+				}
+				{
+					id: "25FF6E65505B14B7"
+					type: "item"
+					item: "ae2:calculation_processor"
+					count: 8
+				}
+				{
+					id: "2339252C70938B27"
+					type: "item"
+					item: "ae2:engineering_processor"
+					count: 8
+				}
+				{
+					id: "0328C9D1C84B45B9"
+					type: "item"
+					item: "ae2:silicon"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "精緻儲存起始套件"
+			x: -6.0d
+			y: -4.5d
+			description: ["有了這些物品，就能開始你的精緻儲存系統"]
+			dependencies: ["167B6648066F358B"]
+			optional: true
+			id: "18DF39CA8357AD3F"
+			tasks: [
+				{
+					id: "4D4D42A7605FC4EF"
+					type: "item"
+					item: "refinedstorage:controller"
+				}
+				{
+					id: "00ED491BCF377CE5"
+					type: "item"
+					item: "refinedstorage:disk_drive"
+				}
+				{
+					id: "353009C09F0128F7"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "refinedstorage:grid"
+									Count: 1b
+								}
+								{
+									id: "refinedstorage:crafting_grid"
+									Count: 1b
+								}
+							]
+							display: {
+								Name: "{\"text\":\"任何 精緻儲存 終端\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "10BCB6264C141C1F"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "refinedstorage:1k_storage_disk"
+									Count: 1b
+									tag: {
+										Id: [I;
+											-471233038
+											-526889163
+											-1092333615
+											-1707433844
+										]
+									}
+								}
+								{
+									id: "refinedstorage:4k_storage_disk"
+									Count: 1b
+									tag: {
+										Id: [I;
+											-1731940105
+											1176519294
+											-1248971641
+											1677986171
+										]
+									}
+								}
+								{
+									id: "refinedstorage:16k_storage_disk"
+									Count: 1b
+									tag: {
+										Id: [I;
+											1797258540
+											1740917755
+											-1608151539
+											1228748077
+										]
+									}
+								}
+								{
+									id: "refinedstorage:64k_storage_disk"
+									Count: 1b
+									tag: {
+										Id: [I;
+											-1521006630
+											-1921954549
+											-1124975719
+											-538253071
+										]
+									}
+								}
+							]
+							display: {
+								Name: "{\"text\":\"任何 精緻儲存 存儲磁碟\"}"
+							}
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "738FFC25B2818EBC"
+					type: "item"
+					item: "refinedstorage:quartz_enriched_iron"
+					count: 32
+				}
+				{
+					id: "535A98A84DA0F9C2"
+					type: "item"
+					item: "refinedstorage:silicon"
+					count: 32
+				}
+				{
+					id: "237F6A62CCB95F49"
+					type: "item"
+					item: "refinedstorage:basic_processor"
+					count: 8
+				}
+				{
+					id: "65AE8C9B1E4CCE33"
+					type: "item"
+					item: "refinedstorage:improved_processor"
+					count: 8
+				}
+				{
+					id: "32E562C47E471D7A"
+					type: "item"
+					item: "refinedstorage:advanced_processor"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "無限水源？"
+			icon: "cookingforblockheads:sink"
+			x: -1.5d
+			y: -3.0d
+			description: ["任務圖示顯示了一個水槽，但其實不需要它也能有無限水源。\\n製作一個潮汐護符並放入任何一個通用機械的流體儲罐中。然後只要點擊流體儲罐的\"藍色按鈕\"設定為\"空白\"，看，無限水源！\\n\\n警告，請\"勿\"把潮汐護符放入迴旋式氣液轉換機中，這會使遊戲崩潰並損壞你的存檔！"]
+			dependencies: ["597011E2824EC464"]
+			id: "007DAA376A57BF37"
+			tasks: [
+				{
+					id: "2AC9F6422D4D3E31"
+					type: "item"
+					item: {
+						id: "projecte:evertide_amulet"
+						Count: 1b
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+				{
+					id: "6B6774C1238263FD"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							items: [
+								{
+									id: "mekanism:basic_fluid_tank"
+									Count: 1b
+								}
+								{
+									id: "mekanism:advanced_fluid_tank"
+									Count: 1b
+								}
+								{
+									id: "mekanism:elite_fluid_tank"
+									Count: 1b
+								}
+								{
+									id: "mekanism:ultimate_fluid_tank"
+									Count: 1b
+								}
+							]
+							display: {
+								Name: "{\"text\":\"任何 通用機械 流體儲罐\"}"
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "59044C012A235A48"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "紫水晶自動化"
+			x: -8.0d
+			y: -4.5d
+			description: ["之後或許你會想要利用紫水晶發展  LazierAE2 和 AE2Things。要取得第一個紫水晶，你可以用感應精煉爐將 1 個改良機械精華和 1 個充能賽特斯石英水晶合併而成。\\n這個配方相當貴且花費很多時間與能量才能製作，因此當你有第一個紫水晶後，直接複製吧。使用結晶器將紫水晶碎片與水製作成紫水晶晶簇，然後用粉碎輪製作出更多的紫水晶碎片。"]
+			dependencies: ["182209ACB7DE7F78"]
+			optional: true
+			id: "36AF346F44428B81"
+			tasks: [
+				{
+					id: "654EAAC804946EAA"
+					type: "item"
+					item: "minecraft:amethyst_shard"
+				}
+				{
+					id: "6ED37996F85DABE7"
+					type: "item"
+					item: "minecraft:amethyst_cluster"
+				}
+			]
+			rewards: [{
+				id: "4D55D8307F567227"
+				type: "item"
+				item: "minecraft:amethyst_shard"
+				count: 16
 			}]
 		}
 	]

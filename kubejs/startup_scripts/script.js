@@ -125,7 +125,7 @@ onEvent('item.registry', event => {
 	event.create('incomplete_time_augment').displayName('時間不穩定器元件').texture('kubejs:item/basic_package');
 	event.create('time_augment').displayName('局部時間不穩定器').tooltip('使機器與時間洪流懷錶相容。最好與諧振整合元件一起使用')
 
-	
+
 	event.create('incomplete_creative_blaze_cake').displayName('未完成的創造模式烈焰蛋糕');
 	event.create('incomplete_creative_upgrade').displayName('未完成的創造模式增強元件');
 
@@ -142,38 +142,43 @@ onEvent('item.registry', event => {
 	event.create('incomplete_proc_1').displayName('未完成的升級：處理 Tier 1').texture('kubejs:item/basic_package');
 	event.create('incomplete_proc_2').displayName('未完成的升級：速度 Tier 2').texture('kubejs:item/basic_package');
 	event.create('incomplete_range_2').displayName('未完成的升級：範圍 Tier 2').texture('kubejs:item/basic_package');
+
+	event.create('incomplete_press').displayName('未完成的壓印模板').texture('kubejs:item/incomplete_press');
 	
 	console.log('[AMMONIUM@KUBEJS]: Adding ore item registry entries...');
 
 	for(var metal in metals) {
 		for(var stage in metals[metal]) {
-			
-			if(stage != 'dirty_slurry' && stage != 'clean_slurry'){
-				
-				if(metals[metal][stage].startsWith('kubejs')) {
-					
-					let item = metals[metal][stage].substring(7);
-					let name = '';
-					let capitalized = metal[0].toUpperCase() + metal.substring(1);
-					if(stage == 'shard') {
+			let metalStage = metals[metal][stage];
+	
+			if(stage !== 'dirty_slurry' && stage !== 'clean_slurry' && metalStage.startsWith('kubejs')) {
+	
+				let item = metalStage.substring(7);
+				let capitalized = metal.charAt(0).toUpperCase() + metal.slice(1);
+				let name = '';
+	
+				switch(stage) {
+					case 'shard':
 						name = `${capitalized} 碎片`;
-					} else {
-					if(stage == 'crystal') {
+						break;
+					case 'crystal':
 						name = `${capitalized} 晶體`;
-					} else {
-					if(stage == 'dirty_dust') {
+						break;
+					case 'dirty_dust':
 						name = `汙濁的 ${capitalized} 粉`;
-					} else {
-					if(stage == 'clump') {
+						break;
+					case 'clump':
 						name = `${capitalized} 碎塊`;
-					} else {
-					if(stage == 'dust') {
+						break;
+					case 'dust':
 						name = `${capitalized} 粉`;
-					}}}}}
-					
-					console.log(metals[metal][stage]);
-					event.create(item).displayName(name);
+						break;
+					default:
+						break;
 				}
+	
+				console.log(metalStage);
+				event.create(item).displayName(name);
 			}
 		}
 	}
@@ -182,7 +187,6 @@ onEvent('item.registry', event => {
 
 onEvent('mekanism.slurry.registry', event => {
 	// Change recipes here
-	
 	console.log('[AMMONIUM@KUBEJS]: Adding ore slurry registry entries...');
 	for(var metal in metals) {
 		if(metals[metal]['dirty_slurry'] == `kubejs:dirty_${metal}`) {

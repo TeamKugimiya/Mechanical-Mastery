@@ -702,7 +702,7 @@
 						RepairCost: 0
 						value: "forge:dusts/constantan"
 						display: {
-							Name: "{\"文字\"：\"任一種康銅粉\"}"
+							Name: "{\"text\":\"任一種康銅粉\"}"
 						}
 					}
 				}
@@ -730,7 +730,7 @@
 						RepairCost: 0
 						value: "forge:dusts/invar"
 						display: {
-							Name: "{\"文字\"：\"任一種不變鋼粉\"}"
+							Name: "{\"text\":\"任一種不變鋼粉\"}"
 						}
 					}
 				}

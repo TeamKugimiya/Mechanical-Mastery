@@ -276,6 +276,11 @@
 					type: "item"
 					item: "mekanismgenerators:fission_fuel_assembly"
 				}
+				{
+					id: "223923EE220F05D0"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+				}
 			]
 			rewards: [
 				{
@@ -638,6 +643,21 @@
 				id: "57948E436FCBF75C"
 				type: "item"
 				item: "projectexpansion:transmutation_interface"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.0d
+			description: ["看了如何運用潮汐護符製作無限水源但你想要更簡單的方案嗎？好吧，別抱怨了，就用水槽吧 ;)"]
+			dependencies: [
+				"157D4C0E9C7A0928"
+				"007DAA376A57BF37"
+			]
+			id: "174E355F55DE59F8"
+			tasks: [{
+				id: "6D8D0E6A16383E3D"
+				type: "item"
+				item: "cookingforblockheads:sink"
 			}]
 		}
 	]
