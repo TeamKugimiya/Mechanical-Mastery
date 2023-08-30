@@ -482,7 +482,7 @@
 			title: "青銅錠"
 			x: -5.0d
 			y: 0.5d
-			description: ["青銅可在感應爐中用 3 鐵 1 錫製成。"]
+			description: ["青銅可在感應爐中用 3 銅 1 錫製成。"]
 			dependencies: ["0F60C65F3D731A56"]
 			id: "45DC5DB7E7D45DD5"
 			tasks: [{
